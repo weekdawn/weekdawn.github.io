@@ -1,0 +1,482 @@
+<!-- ssr.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>keras Sequential 顺序模型 | Week.D.Awn</title>
+    <meta name="generator" content="VuePress 1.8.2" />
+    <link rel="icon" href="/vuepress/logo.png">
+    <link rel="apple-touch-icon" href="/vuepress/logo.png">
+    <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script> <meta name="description" content="Things Aren't Always What You Seem">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="referrer" content="never">
+    <meta data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">  <link rel="preload" href="/assets/css/0.styles.3b028684.css" as="style"><link rel="preload" href="/assets/js/app.c398eec7.js" as="script"><link rel="preload" href="/assets/js/4.a6e0f6de.js" as="script"><link rel="preload" href="/assets/js/1.04da4d5a.js" as="script"><link rel="preload" href="/assets/js/50.6f31f681.js" as="script"><link rel="preload" href="/assets/js/20.58215345.js" as="script"><link rel="prefetch" href="/assets/js/10.043c6b15.js"><link rel="prefetch" href="/assets/js/100.0b7ef34d.js"><link rel="prefetch" href="/assets/js/11.3a9a7dd6.js"><link rel="prefetch" href="/assets/js/12.fd18c972.js"><link rel="prefetch" href="/assets/js/13.6b3e662a.js"><link rel="prefetch" href="/assets/js/14.18867469.js"><link rel="prefetch" href="/assets/js/15.e33f6c38.js"><link rel="prefetch" href="/assets/js/16.6ce20acc.js"><link rel="prefetch" href="/assets/js/17.e5fd4496.js"><link rel="prefetch" href="/assets/js/18.99bdfaee.js"><link rel="prefetch" href="/assets/js/19.92450926.js"><link rel="prefetch" href="/assets/js/2.8c8a00e8.js"><link rel="prefetch" href="/assets/js/21.a8bcfe8e.js"><link rel="prefetch" href="/assets/js/22.d7fd3890.js"><link rel="prefetch" href="/assets/js/23.643d36f7.js"><link rel="prefetch" href="/assets/js/24.48b24e4e.js"><link rel="prefetch" href="/assets/js/25.6e9cf593.js"><link rel="prefetch" href="/assets/js/26.51f5061c.js"><link rel="prefetch" href="/assets/js/27.5043b120.js"><link rel="prefetch" href="/assets/js/28.ad54bc31.js"><link rel="prefetch" href="/assets/js/29.e3041b3b.js"><link rel="prefetch" href="/assets/js/30.4ec8c36a.js"><link rel="prefetch" href="/assets/js/31.9a33432d.js"><link rel="prefetch" href="/assets/js/32.37026133.js"><link rel="prefetch" href="/assets/js/33.a63c7ea3.js"><link rel="prefetch" href="/assets/js/34.8a580572.js"><link rel="prefetch" href="/assets/js/35.5743f5c2.js"><link rel="prefetch" href="/assets/js/36.7a6b085c.js"><link rel="prefetch" href="/assets/js/37.16c58dd6.js"><link rel="prefetch" href="/assets/js/38.eefc496f.js"><link rel="prefetch" href="/assets/js/39.4e28068f.js"><link rel="prefetch" href="/assets/js/40.d144e068.js"><link rel="prefetch" href="/assets/js/41.420345e9.js"><link rel="prefetch" href="/assets/js/42.2193c259.js"><link rel="prefetch" href="/assets/js/43.e5d937cc.js"><link rel="prefetch" href="/assets/js/44.54bcd58d.js"><link rel="prefetch" href="/assets/js/45.f49c4768.js"><link rel="prefetch" href="/assets/js/46.f119a574.js"><link rel="prefetch" href="/assets/js/47.a77e8fbd.js"><link rel="prefetch" href="/assets/js/48.a1cf2b90.js"><link rel="prefetch" href="/assets/js/49.ab69dbd1.js"><link rel="prefetch" href="/assets/js/5.f213a71e.js"><link rel="prefetch" href="/assets/js/51.d76d28bf.js"><link rel="prefetch" href="/assets/js/52.26ede18c.js"><link rel="prefetch" href="/assets/js/53.a08eb812.js"><link rel="prefetch" href="/assets/js/54.153ce911.js"><link rel="prefetch" href="/assets/js/55.13943c04.js"><link rel="prefetch" href="/assets/js/56.34be9cbb.js"><link rel="prefetch" href="/assets/js/57.de1d4a9f.js"><link rel="prefetch" href="/assets/js/58.8df28e86.js"><link rel="prefetch" href="/assets/js/59.ea29f94d.js"><link rel="prefetch" href="/assets/js/6.57f07e7e.js"><link rel="prefetch" href="/assets/js/60.b964dd37.js"><link rel="prefetch" href="/assets/js/61.8eef1b13.js"><link rel="prefetch" href="/assets/js/62.16d92a18.js"><link rel="prefetch" href="/assets/js/63.2637ffef.js"><link rel="prefetch" href="/assets/js/64.c2808fdd.js"><link rel="prefetch" href="/assets/js/65.c42873ff.js"><link rel="prefetch" href="/assets/js/66.6da63447.js"><link rel="prefetch" href="/assets/js/67.3f3574d7.js"><link rel="prefetch" href="/assets/js/68.349d2108.js"><link rel="prefetch" href="/assets/js/69.02f39de4.js"><link rel="prefetch" href="/assets/js/7.4961f87b.js"><link rel="prefetch" href="/assets/js/70.ceb3a6c0.js"><link rel="prefetch" href="/assets/js/71.132ce0cd.js"><link rel="prefetch" href="/assets/js/72.47ca4331.js"><link rel="prefetch" href="/assets/js/73.26c16ffc.js"><link rel="prefetch" href="/assets/js/74.c3bc12c6.js"><link rel="prefetch" href="/assets/js/75.c0a1f245.js"><link rel="prefetch" href="/assets/js/76.192ab51e.js"><link rel="prefetch" href="/assets/js/77.43009449.js"><link rel="prefetch" href="/assets/js/78.890f1567.js"><link rel="prefetch" href="/assets/js/79.cf98a9ac.js"><link rel="prefetch" href="/assets/js/8.c4475795.js"><link rel="prefetch" href="/assets/js/80.9699e226.js"><link rel="prefetch" href="/assets/js/81.2e670bac.js"><link rel="prefetch" href="/assets/js/82.b4faad60.js"><link rel="prefetch" href="/assets/js/83.441c055d.js"><link rel="prefetch" href="/assets/js/84.d69e7781.js"><link rel="prefetch" href="/assets/js/85.ea60a81d.js"><link rel="prefetch" href="/assets/js/86.3625d4b8.js"><link rel="prefetch" href="/assets/js/87.eecd647a.js"><link rel="prefetch" href="/assets/js/88.a47d22bb.js"><link rel="prefetch" href="/assets/js/89.89e3a921.js"><link rel="prefetch" href="/assets/js/9.7355e37a.js"><link rel="prefetch" href="/assets/js/90.daeb5eba.js"><link rel="prefetch" href="/assets/js/91.cdb36aef.js"><link rel="prefetch" href="/assets/js/92.7b26e16f.js"><link rel="prefetch" href="/assets/js/93.43ed992e.js"><link rel="prefetch" href="/assets/js/94.6bf55a9a.js"><link rel="prefetch" href="/assets/js/95.99e6a872.js"><link rel="prefetch" href="/assets/js/96.1f45420b.js"><link rel="prefetch" href="/assets/js/97.719d411f.js"><link rel="prefetch" href="/assets/js/98.e50c265d.js"><link rel="prefetch" href="/assets/js/99.e04211da.js"> <link rel="stylesheet" href="/assets/css/0.styles.3b028684.css">
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        var isMobile =
+          !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          );
+        // PC端显示 3D 地球
+        if (!isMobile) document.getElementById("maps").style.display = "inline";
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-4f9c9c87><div data-v-4f9c9c87><div class="password-shadow password-wrapper-out" style="display:none;" data-v-06dbc5d6 data-v-4f9c9c87 data-v-4f9c9c87><h3 class="title" data-v-06dbc5d6 data-v-06dbc5d6>Week.D.Awn</h3> <p class="description" data-v-06dbc5d6 data-v-06dbc5d6>Things Aren't Always What You Seem</p> <label id="box" class="inputBox" data-v-06dbc5d6 data-v-06dbc5d6><input type="password" value="" data-v-06dbc5d6> <span data-v-06dbc5d6>Konck! Knock!</span> <button data-v-06dbc5d6>OK</button></label> <div class="footer" data-v-06dbc5d6 data-v-06dbc5d6><span data-v-06dbc5d6><i class="iconfont reco-theme" data-v-06dbc5d6></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-06dbc5d6>vuePress-theme-reco</a></span> <span data-v-06dbc5d6><i class="iconfont reco-copyright" data-v-06dbc5d6></i> <a data-v-06dbc5d6><span data-v-06dbc5d6>Week.D.Awn</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-4f9c9c87><header class="navbar" data-v-4f9c9c87><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/vuepress/head.jpg" alt="Week.D.Awn" class="logo"> <span class="site-name">Week.D.Awn</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      领域
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>专业</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blogs/前端/" class="nav-link"><i class="iconfont reco-api"></i>
+  前端
+</a></li><li class="dropdown-subitem"><a href="/blogs/后端/" class="nav-link"><i class="iconfont reco-api"></i>
+  后端
+</a></li><li class="dropdown-subitem"><a href="/blogs/AI/" class="nav-link router-link-active"><i class="iconfont reco-coding"></i>
+  AI
+</a></li><li class="dropdown-subitem"><a href="/others/projects.html" class="nav-link"><i class="iconfont reco-other"></i>
+  收藏
+</a></li><li class="dropdown-subitem"><a href="/blogs/其他/" class="nav-link"><i class="iconfont reco-other"></i>
+  其他
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://travellings.link" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-account"></i>
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/bookmarks/常用/常用网址.html" class="nav-link"><i class="iconfont reco-tag"></i>
+  收藏
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4f9c9c87></div> <aside class="sidebar" data-v-4f9c9c87><div class="personal-info-wrapper" data-v-ad235a34 data-v-4f9c9c87><img src="/vuepress/head.jpg" alt="author-avatar" class="personal-img" data-v-ad235a34> <h3 class="name" data-v-ad235a34>
+    Week.D.Awn
+  </h3> <div class="num" data-v-ad235a34><div data-v-ad235a34><h3 data-v-ad235a34>65</h3> <h6 data-v-ad235a34>Articles</h6></div> <div data-v-ad235a34><h3 data-v-ad235a34>69</h3> <h6 data-v-ad235a34>Tags</h6></div></div> <ul class="social-links" data-v-ad235a34></ul> <hr data-v-ad235a34></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      领域
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>专业</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blogs/前端/" class="nav-link"><i class="iconfont reco-api"></i>
+  前端
+</a></li><li class="dropdown-subitem"><a href="/blogs/后端/" class="nav-link"><i class="iconfont reco-api"></i>
+  后端
+</a></li><li class="dropdown-subitem"><a href="/blogs/AI/" class="nav-link router-link-active"><i class="iconfont reco-coding"></i>
+  AI
+</a></li><li class="dropdown-subitem"><a href="/others/projects.html" class="nav-link"><i class="iconfont reco-other"></i>
+  收藏
+</a></li><li class="dropdown-subitem"><a href="/blogs/其他/" class="nav-link"><i class="iconfont reco-other"></i>
+  其他
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://travellings.link" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-account"></i>
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/bookmarks/常用/常用网址.html" class="nav-link"><i class="iconfont reco-tag"></i>
+  收藏
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav> <ul class="sidebar-links"><li><a href="/blogs/AI/" aria-current="page" class="sidebar-link">AI</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>模型</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/AI/模型/keras.html" aria-current="page" class="active sidebar-link">keras Sequential 顺序模型</a></li><li><a href="/blogs/AI/模型/lstm.html" class="sidebar-link">lstm原理</a></li><li><a href="/blogs/AI/模型/机器学习算法地图.html" class="sidebar-link">机器学习算法地图</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-06dbc5d6 data-v-4f9c9c87><h3 class="title" data-v-06dbc5d6 data-v-06dbc5d6>keras Sequential 顺序模型</h3> <!----> <label id="box" class="inputBox" data-v-06dbc5d6 data-v-06dbc5d6><input type="password" value="" data-v-06dbc5d6> <span data-v-06dbc5d6>Konck! Knock!</span> <button data-v-06dbc5d6>OK</button></label> <div class="footer" data-v-06dbc5d6 data-v-06dbc5d6><span data-v-06dbc5d6><i class="iconfont reco-theme" data-v-06dbc5d6></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-06dbc5d6>vuePress-theme-reco</a></span> <span data-v-06dbc5d6><i class="iconfont reco-copyright" data-v-06dbc5d6></i> <a data-v-06dbc5d6><span data-v-06dbc5d6>Week.D.Awn</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-4f9c9c87><main class="page"><section><div class="page-title"><h1 class="title">keras Sequential 顺序模型</h1> <div data-v-da1c0c82><i class="iconfont reco-account" data-v-da1c0c82><span data-v-da1c0c82>Week.D.Awn</span></i> <i class="iconfont reco-date" data-v-da1c0c82><span data-v-da1c0c82>8/23/2019</span></i> <i class="iconfont reco-eye" data-v-da1c0c82><span id="/blogs/AI/模型/keras.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-da1c0c82><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-da1c0c82><span class="tag-item" data-v-da1c0c82>keras</span><span class="tag-item" data-v-da1c0c82>Sequential</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="sequential-顺序模型"><a href="#sequential-顺序模型" class="header-anchor">#</a> Sequential 顺序模型</h1> <p>顺序模型是多个网络层的线性堆叠。</p> <p>你可以通过将网络层实例的列表传递给 <code>Sequential</code> 的构造器，来创建一个 <code>Sequential</code> 模型：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.models import Sequential
+from keras.layers import Dense, Activation
+
+model = Sequential([
+    Dense(32, input_shape=(784,)),
+    Activation('relu'),
+    Dense(10),
+    Activation('softmax'),
+])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>也可以简单地使用 <code>.add()</code> 方法将各层添加到模型中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>model = Sequential()
+model.add(Dense(32, input_dim=784))
+model.add(Activation('relu'))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="指定输入数据的尺寸"><a href="#指定输入数据的尺寸" class="header-anchor">#</a> 指定输入数据的尺寸</h2> <p>模型需要知道它所期望的输入的尺寸。出于这个原因，顺序模型中的第一层（且只有第一层，因为下面的层可以自动地推断尺寸）需要接收关于其输入尺寸的信息。有几种方法来做到这一点：</p> <ul><li>传递一个 <code>input_shape</code> 参数给第一层。它是一个表示尺寸的元组 (一个整数或 <code>None</code> 的元组，其中 <code>None</code> 表示可能为任何正整数)。在 <code>input_shape</code> 中不包含数据的 batch 大小。</li> <li>某些 2D 层，例如 <code>Dense</code>，支持通过参数 <code>input_dim</code> 指定输入尺寸，某些 3D 时序层支持 <code>input_dim</code> 和 <code>input_length</code> 参数。</li> <li>如果你需要为你的输入指定一个固定的 batch 大小（这对 stateful RNNs 很有用），你可以传递一个 <code>batch_size</code> 参数给一个层。如果你同时将 <code>batch_size=32</code> 和 <code>input_shape=(6, 8)</code> 传递给一个层，那么每一批输入的尺寸就为 <code>(32，6，8)</code>。</li></ul> <p>因此，下面的代码片段是等价的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>model = Sequential()
+model.add(Dense(32, input_shape=(784,)))
+model = Sequential()
+model.add(Dense(32, input_dim=784))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="模型编译"><a href="#模型编译" class="header-anchor">#</a> 模型编译</h2> <p>在训练模型之前，您需要配置学习过程，这是通过 <code>compile</code> 方法完成的。它接收三个参数：</p> <ul><li>优化器 optimizer。它可以是现有优化器的字符串标识符，如 <code>rmsprop</code> 或 <code>adagrad</code>，也可以是 Optimizer 类的实例。详见：<a href="https://keras.io/optimizers" target="_blank" rel="noopener noreferrer">optimizers<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</li> <li>损失函数 loss，模型试图最小化的目标函数。它可以是现有损失函数的字符串标识符，如 <code>categorical_crossentropy</code> 或 <code>mse</code>，也可以是一个目标函数。详见：<a href="https://keras.io/losses" target="_blank" rel="noopener noreferrer">losses<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</li> <li>评估标准 metrics。对于任何分类问题，你都希望将其设置为 <code>metrics = ['accuracy']</code>。评估标准可以是现有的标准的字符串标识符，也可以是自定义的评估标准函数。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 多分类问题
+model.compile(optimizer='rmsprop',
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
+
+# 二分类问题
+model.compile(optimizer='rmsprop',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+
+# 均方误差回归问题
+model.compile(optimizer='rmsprop',
+              loss='mse')
+
+# 自定义评估标准函数
+import keras.backend as K
+
+def mean_pred(y_true, y_pred):
+    return K.mean(y_pred)
+
+model.compile(optimizer='rmsprop',
+              loss='binary_crossentropy',
+              metrics=['accuracy', mean_pred])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h2 id="模型训练"><a href="#模型训练" class="header-anchor">#</a> 模型训练</h2> <p>Keras 模型在输入数据和标签的 Numpy 矩阵上进行训练。为了训练一个模型，你通常会使用 <code>fit</code> 函数。<a href="https://keras.io/models/sequential" target="_blank" rel="noopener noreferrer">文档详见此处<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 对于具有 2 个类的单输入模型（二进制分类）：
+
+model = Sequential()
+model.add(Dense(32, activation='relu', input_dim=100))
+model.add(Dense(1, activation='sigmoid'))
+model.compile(optimizer='rmsprop',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+
+# 生成虚拟数据
+import numpy as np
+data = np.random.random((1000, 100))
+labels = np.random.randint(2, size=(1000, 1))
+
+# 训练模型，以 32 个样本为一个 batch 进行迭代
+model.fit(data, labels, epochs=10, batch_size=32)
+# 对于具有 10 个类的单输入模型（多分类分类）：
+
+model = Sequential()
+model.add(Dense(32, activation='relu', input_dim=100))
+model.add(Dense(10, activation='softmax'))
+model.compile(optimizer='rmsprop',
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
+
+# 生成虚拟数据
+import numpy as np
+data = np.random.random((1000, 100))
+labels = np.random.randint(10, size=(1000, 1))
+
+# 将标签转换为分类的 one-hot 编码
+one_hot_labels = keras.utils.to_categorical(labels, num_classes=10)
+
+# 训练模型，以 32 个样本为一个 batch 进行迭代
+model.fit(data, one_hot_labels, epochs=10, batch_size=32)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>补充：keras全连接层Dense</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>keras.layers.core.Dense(
+units, #代表该层的输出维度
+activation=None, #激活函数.但是默认 liner
+use_bias=True, #是否使用b
+kernel_initializer='glorot_uniform', #初始化w权重，keras/initializers.py
+bias_initializer='zeros', #初始化b权重
+kernel_regularizer=None, #施加在权重w上的正则项,keras/regularizer.py
+bias_regularizer=None, #施加在偏置向量b上的正则项
+activity_regularizer=None, #施加在输出上的正则项
+kernel_constraint=None, #施加在权重w上的约束项
+bias_constraint=None #施加在偏置b上的约束项
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="基于多层感知器-mlp-的-softmax-多分类"><a href="#基于多层感知器-mlp-的-softmax-多分类" class="header-anchor">#</a> 基于多层感知器 (MLP) 的 softmax 多分类：</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import keras
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+from keras.optimizers import SGD
+
+# 生成虚拟数据
+import numpy as np
+x_train = np.random.random((1000, 20))
+y_train = keras.utils.to_categorical(np.random.randint(10, size=(1000, 1)), num_classes=10)
+x_test = np.random.random((100, 20))
+y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)
+
+model = Sequential()
+# Dense(64) 是一个具有 64 个隐藏神经元的全连接层。
+# 在第一层必须指定所期望的输入数据尺寸：
+# 在这里，是一个 20 维的向量。
+model.add(Dense(64, activation='relu', input_dim=20))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(10, activation='softmax'))
+
+sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy',
+              optimizer=sgd,
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train,
+          epochs=20,
+          batch_size=128)
+score = model.evaluate(x_test, y_test, batch_size=128)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h3 id="基于多层感知器的二分类"><a href="#基于多层感知器的二分类" class="header-anchor">#</a> 基于多层感知器的二分类：</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import numpy as np
+from keras.models import Sequential
+from keras.layers import Dense, Dropout
+
+# 生成虚拟数据
+x_train = np.random.random((1000, 20))
+y_train = np.random.randint(2, size=(1000, 1))
+x_test = np.random.random((100, 20))
+y_test = np.random.randint(2, size=(100, 1))
+
+model = Sequential()
+model.add(Dense(64, input_dim=20, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(1, activation='sigmoid'))
+
+model.compile(loss='binary_crossentropy',
+              optimizer='rmsprop',
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train,
+          epochs=20,
+          batch_size=128)
+score = model.evaluate(x_test, y_test, batch_size=128)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h1 id="keras-函数式-api-model"><a href="#keras-函数式-api-model" class="header-anchor">#</a> Keras 函数式 API--Model</h1> <h2 id="例一-全连接网络"><a href="#例一-全连接网络" class="header-anchor">#</a> 例一：全连接网络</h2> <p><code>Sequential</code> 模型可能是实现这种网络的一个更好选择，但这个例子能够帮助我们进行一些简单的理解。</p> <ul><li>网络层的实例是可调用的，它以张量为参数，并且返回一个张量</li> <li>输入和输出均为张量，它们都可以用来定义一个模型（<code>Model</code>）</li> <li>这样的模型同 Keras 的 <code>Sequential</code> 模型一样，都可以被训练</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import Input, Dense
+from keras.models import Model
+
+# 这部分返回一个张量
+inputs = Input(shape=(784,))
+
+# 层的实例是可调用的，它以张量为参数，并且返回一个张量
+x = Dense(64, activation='relu')(inputs)
+x = Dense(64, activation='relu')(x)
+predictions = Dense(10, activation='softmax')(x)
+
+# 这部分创建了一个包含输入层和三个全连接层的模型
+model = Model(inputs=inputs, outputs=predictions)
+model.compile(optimizer='rmsprop',
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
+model.fit(data, labels)  # 开始训练
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="所有的模型都可调用-就像网络层一样"><a href="#所有的模型都可调用-就像网络层一样" class="header-anchor">#</a> 所有的模型都可调用，就像网络层一样</h2> <p>利用函数式 API，可以轻易地重用训练好的模型：可以将任何模型看作是一个层，然后通过传递一个张量来调用它。注意，在调用模型时，您不仅重用模型的<em>结构</em>，还重用了它的权重。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>x = Input(shape=(784,))
+# 这是可行的，并且返回上面定义的 10-way softmax。
+y = model(x)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这种方式能允许我们快速创建可以处理<em>序列输入</em>的模型。只需一行代码，你就将图像分类模型转换为视频分类模型。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import TimeDistributed
+
+# 输入张量是 20 个时间步的序列，
+# 每一个时间为一个 784 维的向量
+input_sequences = Input(shape=(20, 784))
+
+# 这部分将我们之前定义的模型应用于输入序列中的每个时间步。
+# 之前定义的模型的输出是一个 10-way softmax，
+# 因而下面的层的输出将是维度为 10 的 20 个向量的序列。
+processed_sequences = TimeDistributed(model)(input_sequences)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="多输入多输出模型"><a href="#多输入多输出模型" class="header-anchor">#</a> 多输入多输出模型</h2> <p>以下是函数式 API 的一个很好的例子：具有多个输入和输出的模型。函数式 API 使处理大量交织的数据流变得容易。</p> <p>来考虑下面的模型。我们试图预测 Twitter 上的一条新闻标题有多少转发和点赞数。模型的主要输入将是新闻标题本身，即一系列词语，但是为了增添趣味，我们的模型还添加了其他的辅助输入来接收额外的数据，例如新闻标题的发布的时间等。 该模型也将通过两个损失函数进行监督学习。较早地在模型中使用主损失函数，是深度学习模型的一个良好正则方法。</p> <p>模型结构如下图所示：</p> <p><img src="https://keras.io/img/multi-input-multi-output-graph.png" alt=""></p> <p>让我们用函数式 API 来实现它。</p> <p>主要输入接收新闻标题本身，即一个整数序列（每个整数编码一个词）。 这些整数在 1 到 10,000 之间（10,000 个词的词汇表），且序列长度为 100 个词。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import Input, Embedding, LSTM, Dense
+from keras.models import Model
+
+# 标题输入：接收一个含有 100 个整数的序列，每个整数在 1 到 10000 之间。
+# 注意我们可以通过传递一个 &quot;name&quot; 参数来命名任何层。
+main_input = Input(shape=(100,), dtype='int32', name='main_input')
+
+# Embedding 层将输入序列编码为一个稠密向量的序列，
+# 每个向量维度为 512。
+x = Embedding(output_dim=512, input_dim=10000, input_length=100)(main_input)
+
+# LSTM 层把向量序列转换成单个向量，
+# 它包含整个序列的上下文信息
+lstm_out = LSTM(32)(x)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>在这里，我们插入辅助损失，使得即使在模型主损失很高的情况下，LSTM 层和 Embedding 层都能被平稳地训练。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>auxiliary_output = Dense(1, activation='sigmoid', name='aux_output')(lstm_out)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>此时，我们将辅助输入数据与 LSTM 层的输出连接起来，输入到模型中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>auxiliary_input = Input(shape=(5,), name='aux_input')
+x = keras.layers.concatenate([lstm_out, auxiliary_input])
+
+# 堆叠多个全连接网络层
+x = Dense(64, activation='relu')(x)
+x = Dense(64, activation='relu')(x)
+x = Dense(64, activation='relu')(x)
+
+# 最后添加主要的逻辑回归层
+main_output = Dense(1, activation='sigmoid', name='main_output')(x)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>然后定义一个具有两个输入和两个输出的模型：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>model = Model(inputs=[main_input, auxiliary_input], outputs=[main_output, auxiliary_output])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>现在编译模型，并给辅助损失分配一个 0.2 的权重。如果要为不同的输出指定不同的 <code>loss_weights</code> 或 <code>loss</code>，可以使用列表或字典。 在这里，我们给 <code>loss</code> 参数传递单个损失函数，这个损失将用于所有的输出。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>model.compile(optimizer='rmsprop', loss='binary_crossentropy',
+              loss_weights=[1., 0.2])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>我们可以通过传递输入数组和目标数组的列表来训练模型：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>model.fit([headline_data, additional_data], [labels, labels],
+          epochs=50, batch_size=32)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>由于输入和输出均被命名了（在定义时传递了一个 <code>name</code> 参数），我们也可以通过以下方式编译模型：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>model.compile(optimizer='rmsprop',
+              loss={'main_output': 'binary_crossentropy', 'aux_output': 'binary_crossentropy'},
+              loss_weights={'main_output': 1., 'aux_output': 0.2})
+
+# 然后使用以下方式训练：
+model.fit({'main_input': headline_data, 'aux_input': additional_data},
+          {'main_output': labels, 'aux_output': labels},
+          epochs=50, batch_size=32)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="共享网络层"><a href="#共享网络层" class="header-anchor">#</a> 共享网络层</h2> <p>函数式 API 的另一个用途是使用共享网络层的模型。我们来看看共享层。</p> <p>来考虑推特推文数据集。我们想要建立一个模型来分辨两条推文是否来自同一个人（例如，通过推文的相似性来对用户进行比较）。</p> <p>实现这个目标的一种方法是建立一个模型，将两条推文编码成两个向量，连接向量，然后添加逻辑回归层；这将输出两条推文来自同一作者的概率。模型将接收一对对正负表示的推特数据。</p> <p>由于这个问题是对称的，编码第一条推文的机制应该被完全重用来编码第二条推文（权重及其他全部）。这里我们使用一个共享的 LSTM 层来编码推文。</p> <p>让我们使用函数式 API 来构建它。首先我们将一条推特转换为一个尺寸为 <code>(280, 256)</code> 的矩阵，即每条推特 280 字符，每个字符为 256 维的 one-hot 编码向量 （取 256 个常用字符）。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import keras
+from keras.layers import Input, LSTM, Dense
+from keras.models import Model
+
+tweet_a = Input(shape=(280, 256))
+tweet_b = Input(shape=(280, 256))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>要在不同的输入上共享同一个层，只需实例化该层一次，然后根据需要传入你想要的输入即可：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 这一层可以输入一个矩阵，并返回一个 64 维的向量
+shared_lstm = LSTM(64)
+
+# 当我们重用相同的图层实例多次，图层的权重也会被重用 (它其实就是同一层)
+encoded_a = shared_lstm(tweet_a)
+encoded_b = shared_lstm(tweet_b)
+
+# 然后再连接两个向量：
+merged_vector = keras.layers.concatenate([encoded_a, encoded_b], axis=-1)
+
+# 再在上面添加一个逻辑回归层
+predictions = Dense(1, activation='sigmoid')(merged_vector)
+
+# 定义一个连接推特输入和预测的可训练的模型
+model = Model(inputs=[tweet_a, tweet_b], outputs=predictions)
+
+model.compile(optimizer='rmsprop',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+model.fit([data_a, data_b], labels, epochs=10)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>让我们暂停一会，看看如何读取共享层的输出或输出尺寸。</p> <hr> <h2 id="层「节点」的概念"><a href="#层「节点」的概念" class="header-anchor">#</a> 层「节点」的概念</h2> <p>每当你在某个输入上调用一个层时，都将创建一个新的张量（层的输出），并且为该层添加一个「节点」，将输入张量连接到输出张量。当多次调用同一个图层时，该图层将拥有多个节点索引 (0, 1, 2...)。</p> <p>在之前版本的 Keras 中，可以通过 <code>layer.get_output()</code> 来获得层实例的输出张量，或者通过 <code>layer.output_shape</code> 来获取其输出形状。现在你依然可以这么做（除了 <code>get_output()</code> 已经被 <code>output</code> 属性替代）。但是如果一个层与多个输入连接呢？</p> <p>只要一个层仅仅连接到一个输入，就不会有困惑，<code>.output</code> 会返回层的唯一输出：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a = Input(shape=(280, 256))
+
+lstm = LSTM(32)
+encoded_a = lstm(a)
+
+assert lstm.output == encoded_a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>但是如果该层有多个输入，那就会出现问题：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a = Input(shape=(280, 256))
+b = Input(shape=(280, 256))
+
+lstm = LSTM(32)
+encoded_a = lstm(a)
+encoded_b = lstm(b)
+
+lstm.output
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>&gt;&gt; AttributeError: Layer lstm_1 has multiple inbound nodes,
+hence the notion of &quot;layer output&quot; is ill-defined.
+Use `get_output_at(node_index)` instead.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>好吧，通过下面的方法可以解决：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>assert lstm.get_output_at(0) == encoded_a
+assert lstm.get_output_at(1) == encoded_b
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>够简单，对吧？</p> <p><code>input_shape</code> 和 <code>output_shape</code> 这两个属性也是如此：只要该层只有一个节点，或者只要所有节点具有相同的输入/输出尺寸，那么「层输出/输入尺寸」的概念就被很好地定义，并且将由 <code>layer.output_shape</code> / <code>layer.input_shape</code> 返回。但是比如说，如果将一个 <code>Conv2D</code> 层先应用于尺寸为 <code>(32，32，3)</code> 的输入，再应用于尺寸为 <code>(64, 64, 3)</code> 的输入，那么这个层就会有多个输入/输出尺寸，你将不得不通过指定它们所属节点的索引来获取它们：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>a = Input(shape=(32, 32, 3))
+b = Input(shape=(64, 64, 3))
+
+conv = Conv2D(16, (3, 3), padding='same')
+conved_a = conv(a)
+
+# 到目前为止只有一个输入，以下可行：
+assert conv.input_shape == (None, 32, 32, 3)
+
+conved_b = conv(b)
+# 现在 `.input_shape` 属性不可行，但是这样可以：
+assert conv.get_input_shape_at(0) == (None, 32, 32, 3)
+assert conv.get_input_shape_at(1) == (None, 64, 64, 3)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><hr> <h2 id="更多的例子"><a href="#更多的例子" class="header-anchor">#</a> 更多的例子</h2> <p>代码示例仍然是起步的最佳方式，所以这里还有更多的例子。</p> <h3 id="inception-模型"><a href="#inception-模型" class="header-anchor">#</a> Inception 模型</h3> <p>有关 Inception 结构的更多信息，请参阅 <a href="http://arxiv.org/abs/1409.4842" target="_blank" rel="noopener noreferrer">Going Deeper with Convolutions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import Conv2D, MaxPooling2D, Input
+
+input_img = Input(shape=(256, 256, 3))
+
+tower_1 = Conv2D(64, (1, 1), padding='same', activation='relu')(input_img)
+tower_1 = Conv2D(64, (3, 3), padding='same', activation='relu')(tower_1)
+
+tower_2 = Conv2D(64, (1, 1), padding='same', activation='relu')(input_img)
+tower_2 = Conv2D(64, (5, 5), padding='same', activation='relu')(tower_2)
+
+tower_3 = MaxPooling2D((3, 3), strides=(1, 1), padding='same')(input_img)
+tower_3 = Conv2D(64, (1, 1), padding='same', activation='relu')(tower_3)
+
+output = keras.layers.concatenate([tower_1, tower_2, tower_3], axis=1)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="卷积层上的残差连接"><a href="#卷积层上的残差连接" class="header-anchor">#</a> 卷积层上的残差连接</h3> <p>有关残差网络 (Residual Network) 的更多信息，请参阅 <a href="http://arxiv.org/abs/1512.03385" target="_blank" rel="noopener noreferrer">Deep Residual Learning for Image Recognition<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import Conv2D, Input
+
+# 输入张量为 3 通道 256x256 图像
+x = Input(shape=(256, 256, 3))
+# 3 输出通道（与输入通道相同）的 3x3 卷积核
+y = Conv2D(3, (3, 3), padding='same')(x)
+# 返回 x + y
+z = keras.layers.add([x, y])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="共享视觉模型"><a href="#共享视觉模型" class="header-anchor">#</a> 共享视觉模型</h3> <p>该模型在两个输入上重复使用同一个图像处理模块，以判断两个 MNIST 数字是否为相同的数字。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import Conv2D, MaxPooling2D, Input, Dense, Flatten
+from keras.models import Model
+
+# 首先，定义视觉模型
+digit_input = Input(shape=(27, 27, 1))
+x = Conv2D(64, (3, 3))(digit_input)
+x = Conv2D(64, (3, 3))(x)
+x = MaxPooling2D((2, 2))(x)
+out = Flatten()(x)
+
+vision_model = Model(digit_input, out)
+
+# 然后，定义区分数字的模型
+digit_a = Input(shape=(27, 27, 1))
+digit_b = Input(shape=(27, 27, 1))
+
+# 视觉模型将被共享，包括权重和其他所有
+out_a = vision_model(digit_a)
+out_b = vision_model(digit_b)
+
+concatenated = keras.layers.concatenate([out_a, out_b])
+out = Dense(1, activation='sigmoid')(concatenated)
+
+classification_model = Model([digit_a, digit_b], out)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="视觉问答模型"><a href="#视觉问答模型" class="header-anchor">#</a> 视觉问答模型</h3> <p>当被问及关于图片的自然语言问题时，该模型可以选择正确的单词作答。</p> <p>它通过将问题和图像编码成向量，然后连接两者，在上面训练一个逻辑回归，来从词汇表中挑选一个可能的单词作答。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import Conv2D, MaxPooling2D, Flatten
+from keras.layers import Input, LSTM, Embedding, Dense
+from keras.models import Model, Sequential
+
+# 首先，让我们用 Sequential 来定义一个视觉模型。
+# 这个模型会把一张图像编码为向量。
+vision_model = Sequential()
+vision_model.add(Conv2D(64, (3, 3), activation='relu', padding='same', input_shape=(224, 224, 3)))
+vision_model.add(Conv2D(64, (3, 3), activation='relu'))
+vision_model.add(MaxPooling2D((2, 2)))
+vision_model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+vision_model.add(Conv2D(128, (3, 3), activation='relu'))
+vision_model.add(MaxPooling2D((2, 2)))
+vision_model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+vision_model.add(Conv2D(256, (3, 3), activation='relu'))
+vision_model.add(Conv2D(256, (3, 3), activation='relu'))
+vision_model.add(MaxPooling2D((2, 2)))
+vision_model.add(Flatten())
+
+# 现在让我们用视觉模型来得到一个输出张量：
+image_input = Input(shape=(224, 224, 3))
+encoded_image = vision_model(image_input)
+
+# 接下来，定义一个语言模型来将问题编码成一个向量。
+# 每个问题最长 100 个词，词的索引从 1 到 9999.
+question_input = Input(shape=(100,), dtype='int32')
+embedded_question = Embedding(input_dim=10000, output_dim=256, input_length=100)(question_input)
+encoded_question = LSTM(256)(embedded_question)
+
+# 连接问题向量和图像向量：
+merged = keras.layers.concatenate([encoded_question, encoded_image])
+
+# 然后在上面训练一个 1000 词的逻辑回归模型：
+output = Dense(1000, activation='softmax')(merged)
+
+# 最终模型：
+vqa_model = Model(inputs=[image_input, question_input], outputs=output)
+
+# 下一步就是在真实数据上训练模型。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><h3 id="视频问答模型"><a href="#视频问答模型" class="header-anchor">#</a> 视频问答模型</h3> <p>现在我们已经训练了图像问答模型，我们可以很快地将它转换为视频问答模型。在适当的训练下，你可以给它展示一小段视频（例如 100 帧的人体动作），然后问它一个关于这段视频的问题（例如，「这个人在做什么运动？」 -&gt; 「足球」）。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>from keras.layers import TimeDistributed
+
+video_input = Input(shape=(100, 224, 224, 3))
+# 这是基于之前定义的视觉模型（权重被重用）构建的视频编码
+encoded_frame_sequence = TimeDistributed(vision_model)(video_input)  # 输出为向量的序列
+encoded_video = LSTM(256)(encoded_frame_sequence)  # 输出为一个向量
+
+# 这是问题编码器的模型级表示，重复使用与之前相同的权重：
+question_encoder = Model(inputs=question_input, outputs=encoded_question)
+
+# 让我们用它来编码这个问题：
+video_question_input = Input(shape=(100,), dtype='int32')
+encoded_video_question = question_encoder(video_question_input)
+
+# 这就是我们的视频问答模式：
+merged = keras.layers.concatenate([encoded_video, encoded_video_question])
+output = Dense(1000, activation='softmax')(merged)
+video_qa_model = Model(inputs=[video_input, video_question_input], outputs=output)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2022/03/28 16:56:45</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+          ←
+          <a href="/blogs/AI/" class="prev router-link-active">
+            AI
+          </a></span> <span class="next"><a href="/blogs/AI/模型/lstm.html">
+            lstm原理
+          </a>
+          →
+        </span></p></div> <div class="article-list" data-v-6845f1ce><div class="article-title" data-v-6845f1ce><a href="/timeline/" class="iconfont icon-shizhong" data-v-6845f1ce>最近更新</a></div> <div class="article-wrapper" data-v-6845f1ce><dl data-v-6845f1ce><dd data-v-6845f1ce>01</dd> <dt data-v-6845f1ce><a href="/blogs/前端/基础/前端开发的历史和趋势.html" data-v-6845f1ce><div data-v-6845f1ce>前端开发的历史和趋势</div></a> <span data-v-6845f1ce>06-13</span></dt></dl><dl data-v-6845f1ce><dd data-v-6845f1ce>02</dd> <dt data-v-6845f1ce><a href="/blogs/前端/vue/使用vue+iview Form组件,按enter键阻止页面刷新.html" data-v-6845f1ce><div data-v-6845f1ce>使用vue+iview Form组件, 按enter键导致页面刷新的解决方案</div></a> <span data-v-6845f1ce>06-12</span></dt></dl><dl data-v-6845f1ce><dd data-v-6845f1ce>03</dd> <dt data-v-6845f1ce><a href="/blogs/前端/vue/基于xterm的网页版终端.html" data-v-6845f1ce><div data-v-6845f1ce>基于 xterm + websocket + vue 实现网页版终端 terminal</div></a> <span data-v-6845f1ce>06-02</span></dt></dl></div> <div data-v-6845f1ce><a href="/timeline/" class="article-more" data-v-6845f1ce>更多&gt;</a></div></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-5ecb72e8><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#指定输入数据的尺寸" class="sidebar-link reco-side-指定输入数据的尺寸" data-v-5ecb72e8>指定输入数据的尺寸</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#模型编译" class="sidebar-link reco-side-模型编译" data-v-5ecb72e8>模型编译</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#模型训练" class="sidebar-link reco-side-模型训练" data-v-5ecb72e8>模型训练</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#基于多层感知器-mlp-的-softmax-多分类" class="sidebar-link reco-side-基于多层感知器-mlp-的-softmax-多分类" data-v-5ecb72e8>基于多层感知器 (MLP) 的 softmax 多分类：</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#基于多层感知器的二分类" class="sidebar-link reco-side-基于多层感知器的二分类" data-v-5ecb72e8>基于多层感知器的二分类：</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#例一-全连接网络" class="sidebar-link reco-side-例一-全连接网络" data-v-5ecb72e8>例一：全连接网络</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#所有的模型都可调用-就像网络层一样" class="sidebar-link reco-side-所有的模型都可调用-就像网络层一样" data-v-5ecb72e8>所有的模型都可调用，就像网络层一样</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#多输入多输出模型" class="sidebar-link reco-side-多输入多输出模型" data-v-5ecb72e8>多输入多输出模型</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#共享网络层" class="sidebar-link reco-side-共享网络层" data-v-5ecb72e8>共享网络层</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#层「节点」的概念" class="sidebar-link reco-side-层「节点」的概念" data-v-5ecb72e8>层「节点」的概念</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#更多的例子" class="sidebar-link reco-side-更多的例子" data-v-5ecb72e8>更多的例子</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#inception-模型" class="sidebar-link reco-side-inception-模型" data-v-5ecb72e8>Inception 模型</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#卷积层上的残差连接" class="sidebar-link reco-side-卷积层上的残差连接" data-v-5ecb72e8>卷积层上的残差连接</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#共享视觉模型" class="sidebar-link reco-side-共享视觉模型" data-v-5ecb72e8>共享视觉模型</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#视觉问答模型" class="sidebar-link reco-side-视觉问答模型" data-v-5ecb72e8>视觉问答模型</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/AI/模型/keras.html#视频问答模型" class="sidebar-link reco-side-视频问答模型" data-v-5ecb72e8>视频问答模型</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div data-v-3338c3f8><div class="DetailsOpenFlag" style="right:1rem;bottom:9rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;font-size:14px;font-weight:500;display:none;" data-v-3338c3f8>
+ 展开
+
+</div></div><!----><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><!----><!----></div></div>
+    <script src="/assets/js/app.c398eec7.js" defer></script><script src="/assets/js/4.a6e0f6de.js" defer></script><script src="/assets/js/1.04da4d5a.js" defer></script><script src="/assets/js/50.6f31f681.js" defer></script><script src="/assets/js/20.58215345.js" defer></script>
+    <div id="maps" style="pointer-events:auto;display: none;">
+      <div
+        style="position: fixed; width: 300px; height: 300px; right: 200px; bottom: 0px;"
+      >
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5kd8hpv87ho&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+      </div>
+    </div>
+  </body>
+</html>

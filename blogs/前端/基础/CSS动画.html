@@ -1,0 +1,246 @@
+<!-- ssr.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSS动画指南 | Week.D.Awn</title>
+    <meta name="generator" content="VuePress 1.8.2" />
+    <link rel="icon" href="/vuepress/logo.png">
+    <link rel="apple-touch-icon" href="/vuepress/logo.png">
+    <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script> <meta name="description" content="Things Aren't Always What You Seem">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="referrer" content="never">
+    <meta data-draft-node="block" data-draft-type="table" data-size="normal" data-row-style="normal">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">  <link rel="preload" href="/assets/css/0.styles.3b028684.css" as="style"><link rel="preload" href="/assets/js/app.c398eec7.js" as="script"><link rel="preload" href="/assets/js/4.a6e0f6de.js" as="script"><link rel="preload" href="/assets/js/1.04da4d5a.js" as="script"><link rel="preload" href="/assets/js/33.a63c7ea3.js" as="script"><link rel="preload" href="/assets/js/20.58215345.js" as="script"><link rel="prefetch" href="/assets/js/10.043c6b15.js"><link rel="prefetch" href="/assets/js/100.0b7ef34d.js"><link rel="prefetch" href="/assets/js/11.3a9a7dd6.js"><link rel="prefetch" href="/assets/js/12.fd18c972.js"><link rel="prefetch" href="/assets/js/13.6b3e662a.js"><link rel="prefetch" href="/assets/js/14.18867469.js"><link rel="prefetch" href="/assets/js/15.e33f6c38.js"><link rel="prefetch" href="/assets/js/16.6ce20acc.js"><link rel="prefetch" href="/assets/js/17.e5fd4496.js"><link rel="prefetch" href="/assets/js/18.99bdfaee.js"><link rel="prefetch" href="/assets/js/19.92450926.js"><link rel="prefetch" href="/assets/js/2.8c8a00e8.js"><link rel="prefetch" href="/assets/js/21.a8bcfe8e.js"><link rel="prefetch" href="/assets/js/22.d7fd3890.js"><link rel="prefetch" href="/assets/js/23.643d36f7.js"><link rel="prefetch" href="/assets/js/24.48b24e4e.js"><link rel="prefetch" href="/assets/js/25.6e9cf593.js"><link rel="prefetch" href="/assets/js/26.51f5061c.js"><link rel="prefetch" href="/assets/js/27.5043b120.js"><link rel="prefetch" href="/assets/js/28.ad54bc31.js"><link rel="prefetch" href="/assets/js/29.e3041b3b.js"><link rel="prefetch" href="/assets/js/30.4ec8c36a.js"><link rel="prefetch" href="/assets/js/31.9a33432d.js"><link rel="prefetch" href="/assets/js/32.37026133.js"><link rel="prefetch" href="/assets/js/34.8a580572.js"><link rel="prefetch" href="/assets/js/35.5743f5c2.js"><link rel="prefetch" href="/assets/js/36.7a6b085c.js"><link rel="prefetch" href="/assets/js/37.16c58dd6.js"><link rel="prefetch" href="/assets/js/38.eefc496f.js"><link rel="prefetch" href="/assets/js/39.4e28068f.js"><link rel="prefetch" href="/assets/js/40.d144e068.js"><link rel="prefetch" href="/assets/js/41.420345e9.js"><link rel="prefetch" href="/assets/js/42.2193c259.js"><link rel="prefetch" href="/assets/js/43.e5d937cc.js"><link rel="prefetch" href="/assets/js/44.54bcd58d.js"><link rel="prefetch" href="/assets/js/45.f49c4768.js"><link rel="prefetch" href="/assets/js/46.f119a574.js"><link rel="prefetch" href="/assets/js/47.a77e8fbd.js"><link rel="prefetch" href="/assets/js/48.a1cf2b90.js"><link rel="prefetch" href="/assets/js/49.ab69dbd1.js"><link rel="prefetch" href="/assets/js/5.f213a71e.js"><link rel="prefetch" href="/assets/js/50.6f31f681.js"><link rel="prefetch" href="/assets/js/51.d76d28bf.js"><link rel="prefetch" href="/assets/js/52.26ede18c.js"><link rel="prefetch" href="/assets/js/53.a08eb812.js"><link rel="prefetch" href="/assets/js/54.153ce911.js"><link rel="prefetch" href="/assets/js/55.13943c04.js"><link rel="prefetch" href="/assets/js/56.34be9cbb.js"><link rel="prefetch" href="/assets/js/57.de1d4a9f.js"><link rel="prefetch" href="/assets/js/58.8df28e86.js"><link rel="prefetch" href="/assets/js/59.ea29f94d.js"><link rel="prefetch" href="/assets/js/6.57f07e7e.js"><link rel="prefetch" href="/assets/js/60.b964dd37.js"><link rel="prefetch" href="/assets/js/61.8eef1b13.js"><link rel="prefetch" href="/assets/js/62.16d92a18.js"><link rel="prefetch" href="/assets/js/63.2637ffef.js"><link rel="prefetch" href="/assets/js/64.c2808fdd.js"><link rel="prefetch" href="/assets/js/65.c42873ff.js"><link rel="prefetch" href="/assets/js/66.6da63447.js"><link rel="prefetch" href="/assets/js/67.3f3574d7.js"><link rel="prefetch" href="/assets/js/68.349d2108.js"><link rel="prefetch" href="/assets/js/69.02f39de4.js"><link rel="prefetch" href="/assets/js/7.4961f87b.js"><link rel="prefetch" href="/assets/js/70.ceb3a6c0.js"><link rel="prefetch" href="/assets/js/71.132ce0cd.js"><link rel="prefetch" href="/assets/js/72.47ca4331.js"><link rel="prefetch" href="/assets/js/73.26c16ffc.js"><link rel="prefetch" href="/assets/js/74.c3bc12c6.js"><link rel="prefetch" href="/assets/js/75.c0a1f245.js"><link rel="prefetch" href="/assets/js/76.192ab51e.js"><link rel="prefetch" href="/assets/js/77.43009449.js"><link rel="prefetch" href="/assets/js/78.890f1567.js"><link rel="prefetch" href="/assets/js/79.cf98a9ac.js"><link rel="prefetch" href="/assets/js/8.c4475795.js"><link rel="prefetch" href="/assets/js/80.9699e226.js"><link rel="prefetch" href="/assets/js/81.2e670bac.js"><link rel="prefetch" href="/assets/js/82.b4faad60.js"><link rel="prefetch" href="/assets/js/83.441c055d.js"><link rel="prefetch" href="/assets/js/84.d69e7781.js"><link rel="prefetch" href="/assets/js/85.ea60a81d.js"><link rel="prefetch" href="/assets/js/86.3625d4b8.js"><link rel="prefetch" href="/assets/js/87.eecd647a.js"><link rel="prefetch" href="/assets/js/88.a47d22bb.js"><link rel="prefetch" href="/assets/js/89.89e3a921.js"><link rel="prefetch" href="/assets/js/9.7355e37a.js"><link rel="prefetch" href="/assets/js/90.daeb5eba.js"><link rel="prefetch" href="/assets/js/91.cdb36aef.js"><link rel="prefetch" href="/assets/js/92.7b26e16f.js"><link rel="prefetch" href="/assets/js/93.43ed992e.js"><link rel="prefetch" href="/assets/js/94.6bf55a9a.js"><link rel="prefetch" href="/assets/js/95.99e6a872.js"><link rel="prefetch" href="/assets/js/96.1f45420b.js"><link rel="prefetch" href="/assets/js/97.719d411f.js"><link rel="prefetch" href="/assets/js/98.e50c265d.js"><link rel="prefetch" href="/assets/js/99.e04211da.js"> <link rel="stylesheet" href="/assets/css/0.styles.3b028684.css">
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        var isMobile =
+          !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          );
+        // PC端显示 3D 地球
+        if (!isMobile) document.getElementById("maps").style.display = "inline";
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-4f9c9c87><div data-v-4f9c9c87><div class="password-shadow password-wrapper-out" style="display:none;" data-v-06dbc5d6 data-v-4f9c9c87 data-v-4f9c9c87><h3 class="title" data-v-06dbc5d6 data-v-06dbc5d6>Week.D.Awn</h3> <p class="description" data-v-06dbc5d6 data-v-06dbc5d6>Things Aren't Always What You Seem</p> <label id="box" class="inputBox" data-v-06dbc5d6 data-v-06dbc5d6><input type="password" value="" data-v-06dbc5d6> <span data-v-06dbc5d6>Konck! Knock!</span> <button data-v-06dbc5d6>OK</button></label> <div class="footer" data-v-06dbc5d6 data-v-06dbc5d6><span data-v-06dbc5d6><i class="iconfont reco-theme" data-v-06dbc5d6></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-06dbc5d6>vuePress-theme-reco</a></span> <span data-v-06dbc5d6><i class="iconfont reco-copyright" data-v-06dbc5d6></i> <a data-v-06dbc5d6><span data-v-06dbc5d6>Week.D.Awn</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-4f9c9c87><header class="navbar" data-v-4f9c9c87><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/vuepress/head.jpg" alt="Week.D.Awn" class="logo"> <span class="site-name">Week.D.Awn</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      领域
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>专业</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blogs/前端/" class="nav-link router-link-active"><i class="iconfont reco-api"></i>
+  前端
+</a></li><li class="dropdown-subitem"><a href="/blogs/后端/" class="nav-link"><i class="iconfont reco-api"></i>
+  后端
+</a></li><li class="dropdown-subitem"><a href="/blogs/AI/" class="nav-link"><i class="iconfont reco-coding"></i>
+  AI
+</a></li><li class="dropdown-subitem"><a href="/others/projects.html" class="nav-link"><i class="iconfont reco-other"></i>
+  收藏
+</a></li><li class="dropdown-subitem"><a href="/blogs/其他/" class="nav-link"><i class="iconfont reco-other"></i>
+  其他
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://travellings.link" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-account"></i>
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/bookmarks/常用/常用网址.html" class="nav-link"><i class="iconfont reco-tag"></i>
+  收藏
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4f9c9c87></div> <aside class="sidebar" data-v-4f9c9c87><div class="personal-info-wrapper" data-v-ad235a34 data-v-4f9c9c87><img src="/vuepress/head.jpg" alt="author-avatar" class="personal-img" data-v-ad235a34> <h3 class="name" data-v-ad235a34>
+    Week.D.Awn
+  </h3> <div class="num" data-v-ad235a34><div data-v-ad235a34><h3 data-v-ad235a34>65</h3> <h6 data-v-ad235a34>Articles</h6></div> <div data-v-ad235a34><h3 data-v-ad235a34>69</h3> <h6 data-v-ad235a34>Tags</h6></div></div> <ul class="social-links" data-v-ad235a34></ul> <hr data-v-ad235a34></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      领域
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>专业</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blogs/前端/" class="nav-link router-link-active"><i class="iconfont reco-api"></i>
+  前端
+</a></li><li class="dropdown-subitem"><a href="/blogs/后端/" class="nav-link"><i class="iconfont reco-api"></i>
+  后端
+</a></li><li class="dropdown-subitem"><a href="/blogs/AI/" class="nav-link"><i class="iconfont reco-coding"></i>
+  AI
+</a></li><li class="dropdown-subitem"><a href="/others/projects.html" class="nav-link"><i class="iconfont reco-other"></i>
+  收藏
+</a></li><li class="dropdown-subitem"><a href="/blogs/其他/" class="nav-link"><i class="iconfont reco-other"></i>
+  其他
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://travellings.link" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-account"></i>
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/bookmarks/常用/常用网址.html" class="nav-link"><i class="iconfont reco-tag"></i>
+  收藏
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav> <ul class="sidebar-links"><li><a href="/blogs/前端/" aria-current="page" class="sidebar-link">前端</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/前端/基础/flex布局.html" class="sidebar-link">flex布局</a></li><li><a href="/blogs/前端/基础/sass用法指南.html" class="sidebar-link">sass用法指南</a></li><li><a href="/blogs/前端/基础/CSS动画.html" aria-current="page" class="active sidebar-link">CSS动画指南</a></li><li><a href="/blogs/前端/基础/网页色彩方案.html" class="sidebar-link">网页配色方案</a></li><li><a href="/blogs/前端/基础/CSS定位详解.html" class="sidebar-link">CSS定位详解</a></li><li><a href="/blogs/前端/基础/网页中使用希腊字母.html" class="sidebar-link">网页中使用希腊字母</a></li><li><a href="/blogs/前端/基础/前端开发的历史和趋势.html" class="sidebar-link">前端开发的历史和趋势</a></li><li><a href="/blogs/前端/基础/前端模块化详解.html" class="sidebar-link">前端模块化详解</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技巧</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-06dbc5d6 data-v-4f9c9c87><h3 class="title" data-v-06dbc5d6 data-v-06dbc5d6>CSS动画指南</h3> <!----> <label id="box" class="inputBox" data-v-06dbc5d6 data-v-06dbc5d6><input type="password" value="" data-v-06dbc5d6> <span data-v-06dbc5d6>Konck! Knock!</span> <button data-v-06dbc5d6>OK</button></label> <div class="footer" data-v-06dbc5d6 data-v-06dbc5d6><span data-v-06dbc5d6><i class="iconfont reco-theme" data-v-06dbc5d6></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-06dbc5d6>vuePress-theme-reco</a></span> <span data-v-06dbc5d6><i class="iconfont reco-copyright" data-v-06dbc5d6></i> <a data-v-06dbc5d6><span data-v-06dbc5d6>Week.D.Awn</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-4f9c9c87><main class="page"><section><div class="page-title"><h1 class="title">CSS动画指南</h1> <div data-v-da1c0c82><i class="iconfont reco-account" data-v-da1c0c82><span data-v-da1c0c82>Week.D.Awn</span></i> <i class="iconfont reco-date" data-v-da1c0c82><span data-v-da1c0c82>4/13/2022</span></i> <i class="iconfont reco-eye" data-v-da1c0c82><span id="/blogs/前端/基础/CSS动画.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-da1c0c82><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-da1c0c82><span class="tag-item" data-v-da1c0c82>css</span><span class="tag-item" data-v-da1c0c82>动画</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>CSS动画的两大组成部分：transition和animation，这篇文章只是一个简介，帮助初学者了解全貌，同时又是一个快速指南，当你想不起某一个用法的时候，能够快速地找到提示。</p> <h2 id="css-transition"><a href="#css-transition" class="header-anchor">#</a> CSS Transition</h2> <h3 id="_1-1-基本用法"><a href="#_1-1-基本用法" class="header-anchor">#</a> 1.1 基本用法</h3> <p>在CSS 3引入Transition（过渡）这个概念之前，CSS是没有时间轴的。也就是说，所有的状态变化，都是即时完成。
+当鼠标放置于缩略图之上，缩略图会迅速变大。注意，缩略图的变大是瞬间实现的。下面是代码，相当简单。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    height:15px;
+    width:15px;
+}
+
+img:hover{
+    height: 450px;
+    width: 450px;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>transition的作用在于，指定状态变化所需要的时间。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition: 1s;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>上面代码指定，图片放大的过程需要1秒</p> <p>我们还可以指定transition适用的属性，比如只适用于height。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition: 1s height;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这样一来，只有height的变化需要1秒实现，其他变化（主要是width）依然瞬间实现</p> <h3 id="_1-2-transition-delay"><a href="#_1-2-transition-delay" class="header-anchor">#</a> 1.2 transition-delay</h3> <p>在同一行transition语句中，可以分别指定多个属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition: 1s height, 1s width;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>但是，这样一来，height和width的变化是同时进行的，跟不指定它们没有差别</p> <p>我们希望，让height先发生变化，等结束以后，再让width发生变化。实现这一点很容易，就是为width指定一个delay参数。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition: 1s height, 1s 1s width;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>上面代码指定，width在1秒之后，再开始变化，也就是延迟（delay）1秒</p> <p>delay的真正意义在于，它指定了动画发生的顺序，使得多个不同的transition可以连在一起，形成复杂效果。</p> <h3 id="_1-3-transition-timing-function"><a href="#_1-3-transition-timing-function" class="header-anchor">#</a> 1.3 transition-timing-function</h3> <p>transition的状态变化速度（又称timing function），默认不是匀速的，而是逐渐放慢，这叫做ease。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition: 1s ease;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>除了ease以外，其他模式还包括</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>（1）linear：匀速
+
+（2）ease-in：加速
+
+（3）ease-out：减速
+
+（4）cubic-bezier函数：自定义速度模式
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>最后那个cubic-bezier，可以使用<a href="https://cubic-bezier.com/" target="_blank" rel="noopener noreferrer">工具网站<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>来定制。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition: 1s height cubic-bezier(.83,.97,.05,1.44);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>上面的代码会产生一个最后阶段放大过度、然后回缩的效果。</p> <h3 id="_1-4-transition的各项属性"><a href="#_1-4-transition的各项属性" class="header-anchor">#</a> 1.4 transition的各项属性</h3> <p>transition的完整写法如下。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition: 1s 1s height ease;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这其实是一个简写形式，可以单独定义成各个属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+    transition-property: height;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_1-5-transition的使用注意"><a href="#_1-5-transition的使用注意" class="header-anchor">#</a> 1.5 transition的使用注意</h3> <p>（1）目前，各大浏览器（包括IE 10）都已经支持无前缀的transition，所以transition已经可以很安全地不加浏览器前缀。</p> <p>（2）不是所有的CSS属性都支持transition，完整的列表查看这里，以及具体的效果。</p> <p>（3）transition需要明确知道，开始状态和结束状态的具体数值，才能计算出中间状态。比如，height从0px变化到100px，transition可以算出中间状态。但是，transition没法算出0px到auto的中间状态，也就是说，如果开始或结束的设置是height: auto，那么就不会产生动画效果。类似的情况还有，display: none到block，background: url(foo.jpg)到url(bar.jpg)等等。</p> <h3 id="_1-6-transition的局限"><a href="#_1-6-transition的局限" class="header-anchor">#</a> 1.6 transition的局限</h3> <p>transition的优点在于简单易用，但是它有几个很大的局限。</p> <p>（1）transition需要事件触发，所以没法在网页加载时自动发生。</p> <p>（2）transition是一次性的，不能重复发生，除非一再触发。</p> <p>（3）transition只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。</p> <p>（4）一条transition规则，只能定义一个属性的变化，不能涉及多个属性。</p> <p>CSS Animation就是为了解决这些问题而提出的。</p> <h2 id="css-animation"><a href="#css-animation" class="header-anchor">#</a> CSS Animation</h2> <h3 id="_2-1-基本用法"><a href="#_2-1-基本用法" class="header-anchor">#</a> 2.1 基本用法</h3> <p>首先，CSS Animation需要指定动画一个周期持续的时间，以及动画效果的名称。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation: 1s rainbow;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>上面代码表示，当鼠标悬停在div元素上时，会产生名为rainbow的动画效果，持续时间为1秒。为此，我们还需要用keyframes关键字，定义rainbow效果。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes rainbow {
+  0% { background: #c00; }
+  50% { background: orange; }
+  100% { background: yellowgreen; }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>上面代码表示，rainbow效果一共有三个状态，分别为起始（0%）、中点（50%）和结束（100%）。如果有需要，完全可以插入更多状态。</p> <p>默认情况下，动画只播放一次。加入infinite关键字，可以让动画无限次播放。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation: 1s rainbow infinite;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>也可以指定动画具体播放的次数，比如3次。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation: 1s rainbow 3;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_2-2-animation-fill-mode"><a href="#_2-2-animation-fill-mode" class="header-anchor">#</a> 2.2 animation-fill-mode</h3> <p>动画结束以后，会立即从结束状态跳回到起始状态。如果想让动画保持在结束状态，需要使用animation-fill-mode属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation: 1s rainbow forwards;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>forwards表示让动画停留在结束状态</p> <p>animation-fill-mode还可以使用下列值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>（1）none：默认值，回到动画没开始时的状态。
+
+（2）backwards：让动画回到第一帧的状态。
+
+（3）both: 根据animation-direction（见后）轮流应用forwards和backwards规则。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_2-3-animation-direction"><a href="#_2-3-animation-direction" class="header-anchor">#</a> 2.3 animation-direction</h3> <p>动画循环播放时，每次都是从结束状态跳回到起始状态，再开始播放。animation-direction属性，可以改变这种行为。</p> <p>下面看一个例子，来说明如何使用animation-direction。假定有一个动画是这样定义的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes rainbow {
+  0% { background-color: yellow; }
+  100% { background: blue; }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>默认情况是，animation-direction等于normal。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation: 1s rainbow 3 normal;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此外，还可以等于取alternate、reverse、alternate-reverse等值。它们的含义见下图（假定动画连续播放三次）
+<img src="https://www.ruanyifeng.com/blogimg/asset/201402/bg2014021401.png" alt=""></p> <p>简单说，animation-direction指定了动画播放的方向，最常用的值是normal和reverse。浏览器对其他值的支持情况不佳，应该慎用。</p> <h3 id="_2-4-animation的各项属性"><a href="#_2-4-animation的各项属性" class="header-anchor">#</a> 2.4 animation的各项属性</h3> <p>同transition一样，animation也是一个简写形式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation: 1s 1s rainbow linear 3 forwards normal;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这是一个简写形式，可以分解成各个单独的属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation-name: rainbow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+    animation-fill-mode:forwards;
+  animation-direction: normal;
+  animation-iteration-count: 3;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_2-5-keyframes的写法"><a href="#_2-5-keyframes的写法" class="header-anchor">#</a> 2.5 keyframes的写法</h3> <p>keyframes关键字用来定义动画的各个状态，它的写法相当自由。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes rainbow {
+  0% { background: #c00 }
+  50% { background: orange }
+  100% { background: yellowgreen }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>0%可以用from代表，100%可以用to代表，因此上面的代码等同于下面的形式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes rainbow {
+  from { background: #c00 }
+  50% { background: orange }
+  to { background: yellowgreen }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>如果省略某个状态，浏览器会自动推算中间状态，所以下面都是合法的写法。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes rainbow {
+  50% { background: orange }
+  to { background: yellowgreen }
+}
+
+@keyframes rainbow {
+  to { background: yellowgreen }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>甚至，可以把多个状态写在一行。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@keyframes pound {
+  from，to { transform: none; }
+  50% { transform: scale(1.2); }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>另外一点需要注意的是，浏览器从一个状态向另一个状态过渡，是平滑过渡。steps函数可以实现分步过渡。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  animation: 1s rainbow infinite steps(10);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这里有一个非常神奇的<a href="https://dabblet.com/gist/1745856" target="_blank" rel="noopener noreferrer">打字例子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，可以看到steps函数的用处。</p> <h3 id="_2-6-animation-play-state"><a href="#_2-6-animation-play-state" class="header-anchor">#</a> 2.6 animation-play-state</h3> <p>有时，动画播放过程中，会突然停止。这时，默认行为是跳回到动画的开始状态。</p> <p>如果想让动画保持突然终止时的状态，就要使用animation-play-state属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div {
+    animation: spin 1s linear infinite;
+    animation-play-state: paused;
+}
+
+div:hover {
+  animation-play-state: running;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>上面的代码指定，没有鼠标没有悬停时，动画状态是暂停；一旦悬停，动画状态改为继续播放。</p> <h3 id="_2-7-浏览器前缀"><a href="#_2-7-浏览器前缀" class="header-anchor">#</a> 2.7 浏览器前缀</h3> <p>目前，IE 10和Firefox（&gt;= 16）支持没有前缀的animation，而chrome不支持，所以必须使用webkit前缀。</p> <p>也就是说，实际运用中，代码必须写成下面的样子。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div:hover {
+  -webkit-animation: 1s rainbow;
+  animation: 1s rainbow;  
+}
+
+@-webkit-keyframes rainbow {
+  0% { background: #c00; }
+  50% { background: orange; }
+  100% { background: yellowgreen; }
+}
+
+@keyframes rainbow {
+  0% { background: #c00; }
+  50% { background: orange; }
+  100% { background: yellowgreen; }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2022/06/02 11:06:17</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+          ←
+          <a href="/blogs/前端/基础/sass用法指南.html" class="prev">
+            sass用法指南
+          </a></span> <span class="next"><a href="/blogs/前端/基础/网页色彩方案.html">
+            网页配色方案
+          </a>
+          →
+        </span></p></div> <div class="article-list" data-v-6845f1ce><div class="article-title" data-v-6845f1ce><a href="/timeline/" class="iconfont icon-shizhong" data-v-6845f1ce>最近更新</a></div> <div class="article-wrapper" data-v-6845f1ce><dl data-v-6845f1ce><dd data-v-6845f1ce>01</dd> <dt data-v-6845f1ce><a href="/blogs/前端/基础/前端开发的历史和趋势.html" data-v-6845f1ce><div data-v-6845f1ce>前端开发的历史和趋势</div></a> <span data-v-6845f1ce>06-13</span></dt></dl><dl data-v-6845f1ce><dd data-v-6845f1ce>02</dd> <dt data-v-6845f1ce><a href="/blogs/前端/vue/使用vue+iview Form组件,按enter键阻止页面刷新.html" data-v-6845f1ce><div data-v-6845f1ce>使用vue+iview Form组件, 按enter键导致页面刷新的解决方案</div></a> <span data-v-6845f1ce>06-12</span></dt></dl><dl data-v-6845f1ce><dd data-v-6845f1ce>03</dd> <dt data-v-6845f1ce><a href="/blogs/前端/vue/基于xterm的网页版终端.html" data-v-6845f1ce><div data-v-6845f1ce>基于 xterm + websocket + vue 实现网页版终端 terminal</div></a> <span data-v-6845f1ce>06-02</span></dt></dl></div> <div data-v-6845f1ce><a href="/timeline/" class="article-more" data-v-6845f1ce>更多&gt;</a></div></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-5ecb72e8><li class="level-2" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#前言" class="sidebar-link reco-side-前言" data-v-5ecb72e8>前言</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#css-transition" class="sidebar-link reco-side-css-transition" data-v-5ecb72e8>CSS Transition</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_1-1-基本用法" class="sidebar-link reco-side-_1-1-基本用法" data-v-5ecb72e8>1.1 基本用法</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_1-2-transition-delay" class="sidebar-link reco-side-_1-2-transition-delay" data-v-5ecb72e8>1.2 transition-delay</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_1-3-transition-timing-function" class="sidebar-link reco-side-_1-3-transition-timing-function" data-v-5ecb72e8>1.3 transition-timing-function</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_1-4-transition的各项属性" class="sidebar-link reco-side-_1-4-transition的各项属性" data-v-5ecb72e8>1.4 transition的各项属性</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_1-5-transition的使用注意" class="sidebar-link reco-side-_1-5-transition的使用注意" data-v-5ecb72e8>1.5 transition的使用注意</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_1-6-transition的局限" class="sidebar-link reco-side-_1-6-transition的局限" data-v-5ecb72e8>1.6 transition的局限</a></li><li class="level-2" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#css-animation" class="sidebar-link reco-side-css-animation" data-v-5ecb72e8>CSS Animation</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_2-1-基本用法" class="sidebar-link reco-side-_2-1-基本用法" data-v-5ecb72e8>2.1 基本用法</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_2-2-animation-fill-mode" class="sidebar-link reco-side-_2-2-animation-fill-mode" data-v-5ecb72e8>2.2 animation-fill-mode</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_2-3-animation-direction" class="sidebar-link reco-side-_2-3-animation-direction" data-v-5ecb72e8>2.3 animation-direction</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_2-4-animation的各项属性" class="sidebar-link reco-side-_2-4-animation的各项属性" data-v-5ecb72e8>2.4 animation的各项属性</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_2-5-keyframes的写法" class="sidebar-link reco-side-_2-5-keyframes的写法" data-v-5ecb72e8>2.5 keyframes的写法</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_2-6-animation-play-state" class="sidebar-link reco-side-_2-6-animation-play-state" data-v-5ecb72e8>2.6 animation-play-state</a></li><li class="level-3" data-v-5ecb72e8><a href="/blogs/前端/基础/CSS动画.html#_2-7-浏览器前缀" class="sidebar-link reco-side-_2-7-浏览器前缀" data-v-5ecb72e8>2.7 浏览器前缀</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div data-v-3338c3f8><div class="DetailsOpenFlag" style="right:1rem;bottom:9rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;font-size:14px;font-weight:500;display:none;" data-v-3338c3f8>
+ 展开
+
+</div></div><!----><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><!----><!----></div></div>
+    <script src="/assets/js/app.c398eec7.js" defer></script><script src="/assets/js/4.a6e0f6de.js" defer></script><script src="/assets/js/1.04da4d5a.js" defer></script><script src="/assets/js/33.a63c7ea3.js" defer></script><script src="/assets/js/20.58215345.js" defer></script>
+    <div id="maps" style="pointer-events:auto;display: none;">
+      <div
+        style="position: fixed; width: 300px; height: 300px; right: 200px; bottom: 0px;"
+      >
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5kd8hpv87ho&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+      </div>
+    </div>
+  </body>
+</html>
