@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "c3b37d267b784159c5072c5416899c1e"
+    "revision": "f01b5769f3a15372a59c346c579cbeb8"
   },
   {
     "url": "about/index.html",
-    "revision": "979cc47bbf98d61eabf16ddb22f56a97"
+    "revision": "1be6ea2ad256ffdccb84379417982204"
   },
   {
     "url": "assets/css/0.styles.bf298c27.css",
@@ -470,12 +470,12 @@ self.__precacheManifest = [
     "revision": "718ae857d1825e8cb86383864dad8be1"
   },
   {
-    "url": "assets/js/87.ebfd6ca9.js",
-    "revision": "a84714d6b5d9a36b6a37a6f5117301c0"
+    "url": "assets/js/87.75edeaa0.js",
+    "revision": "28b62d2a81fb8d1fd6b81fcdf95b33e0"
   },
   {
-    "url": "assets/js/88.fbec67d8.js",
-    "revision": "c101b6a4d9ba95fa85ce8c0f8789535b"
+    "url": "assets/js/88.25877a58.js",
+    "revision": "636f1992190bcb8cef5a84aaa8c58fc9"
   },
   {
     "url": "assets/js/89.73fdc358.js",
@@ -526,436 +526,436 @@ self.__precacheManifest = [
     "revision": "44798a6bc2319c78547ec0de9590d9e2"
   },
   {
-    "url": "assets/js/app.d930d83f.js",
-    "revision": "d38af0ec2f59d2729e02a4dd1d1f7955"
+    "url": "assets/js/app.fc76a88c.js",
+    "revision": "7b4662bc4f768c7707a221b10901e50a"
   },
   {
     "url": "blogs/AI/index.html",
-    "revision": "f5567598efaf4e9fbd7048612c24173f"
+    "revision": "21ba4d70e54853abafc49670244bf986"
   },
   {
     "url": "blogs/AI/模型/keras.html",
-    "revision": "249fb7ad9d40e5946dc9207af970eef4"
+    "revision": "0db1b12e7a2911bda308628843663875"
   },
   {
     "url": "blogs/AI/模型/lstm.html",
-    "revision": "9d8b22dfe2d47a19111e122fb1be5756"
+    "revision": "f7ec10df1cc888d1492f2260a669628e"
   },
   {
     "url": "blogs/AI/模型/机器学习算法地图.html",
-    "revision": "8848cf863b6fea699ea23f373275787b"
+    "revision": "e20ecf86fa9c267f501f2d83638d2fcb"
   },
   {
     "url": "blogs/index.html",
-    "revision": "f8b2cfae02db9a8a1f2aa25c0356293f"
+    "revision": "5a17a1698051c59c7917b73db472efb3"
   },
   {
     "url": "blogs/其他/index.html",
-    "revision": "086695d8123b08824acadfeb8a385270"
+    "revision": "35165f6179e1607d6613fd51a5faebe8"
   },
   {
     "url": "blogs/其他/其他/世界杯历史赛程比分全集.html",
-    "revision": "8c4dcb064bc6b68dad184e8646060817"
+    "revision": "4762776040b79b0b20bbb5d8a5481f3d"
   },
   {
     "url": "blogs/其他/其他/复杂度.html",
-    "revision": "930307a2eca4a35ab4edc9fedaa72607"
+    "revision": "e1346af96ff2b35b3091fdbdbe2a3c5d"
   },
   {
     "url": "blogs/其他/教程/threeJs教程.html",
-    "revision": "ea5c6b7a579638fa0f4d694618c8e82e"
+    "revision": "b3a34d827cd4b88765fc69cde47d5e77"
   },
   {
     "url": "blogs/其他/教程/使用基于 Github Actions 实现一个免费的任务调度工具.html",
-    "revision": "1fc941b222cd946d0abeb23fa71032ab"
+    "revision": "d0716d7b143aee7861278e0ed77921ab"
   },
   {
     "url": "blogs/其他/教程/内网穿透工具.html",
-    "revision": "57268cca535604aa20c297e417386f64"
+    "revision": "9aba86de93645ffabbd3b23c1628c3f7"
   },
   {
     "url": "blogs/其他/笔记/bat批处理语法.html",
-    "revision": "4feae6d6883074f5e127c89cd817f96b"
+    "revision": "75521f0227b707adbbc218878f124d51"
   },
   {
     "url": "blogs/其他/笔记/conda命令.html",
-    "revision": "b0fb81c328a8c0047cdbb21635c39262"
+    "revision": "64a06b7cbe1658befa93386ae360616d"
+  },
+  {
+    "url": "blogs/其他/笔记/git使用手册.html",
+    "revision": "24da047789c0c1fc14c62e7ce1b42f03"
   },
   {
     "url": "blogs/其他/笔记/git常用命令速查.html",
-    "revision": "717e342ff44c360e1ff7514bdfa8b61d"
-  },
-  {
-    "url": "blogs/其他/笔记/git手册.html",
-    "revision": "08a5c990f5b77d8d23657949df9878d8"
+    "revision": "e8ae411ed92d5544585fa2c953bb3165"
   },
   {
     "url": "blogs/其他/笔记/git提交规范.html",
-    "revision": "7b7b21427613f9f7fd50e394d484e42b"
+    "revision": "e4f9c46b003366151b1371b0b4e2709d"
   },
   {
     "url": "blogs/其他/笔记/k8s基本命令与pod管理.html",
-    "revision": "6d7eeb46d5abc3da6b5b1dfed920a113"
+    "revision": "431601e24113ba7fc9c3bda1c9edb506"
   },
   {
     "url": "blogs/其他/笔记/linux常用命令.html",
-    "revision": "da5024d239aa26cb23750c42029fd130"
+    "revision": "bcfd04852bd264ea4feba8b292671e51"
   },
   {
     "url": "blogs/其他/笔记/markdown语法.html",
-    "revision": "affc6c596a56f463bb762fda68111934"
+    "revision": "c55895e2bb91f3bb313589891136410d"
   },
   {
     "url": "blogs/其他/笔记/npm和yarn常用命令.html",
-    "revision": "c6703fae73bb52e75ee02736912dcc5b"
+    "revision": "749dbe5dabe15baa88c840ca09165953"
   },
   {
     "url": "blogs/其他/笔记/npm常用命令.html",
-    "revision": "b719b63824328127a99cb36d3a1d7b80"
+    "revision": "0104a748830e3044cb0904ddc0e17204"
   },
   {
     "url": "blogs/其他/笔记/py3和py2的区别总结.html",
-    "revision": "4665bc28c8e609933a2d86367c695767"
+    "revision": "8706890ba81e544e85c3c0d938c3b3af"
   },
   {
     "url": "blogs/其他/笔记/Scala学习笔记.html",
-    "revision": "af780d3bb37cec5e86b940252976b991"
+    "revision": "2759e68bb91bd2ba9fb83c4dbb95aabf"
   },
   {
     "url": "blogs/其他/笔记/ss.html",
-    "revision": "9832039757b81c9ea1e0c3ade0a46519"
+    "revision": "1596484e893552cc78d62eb5c65381e9"
   },
   {
     "url": "blogs/其他/笔记/yaml学习笔记.html",
-    "revision": "cb2d8cd43e8aece5ff3c8b500e202045"
+    "revision": "83e0a46c70219baf306294b039453c4a"
   },
   {
     "url": "blogs/其他/笔记/常用bat命令.html",
-    "revision": "ddf48f07df0795bb414dfcf6c2a9ba5f"
+    "revision": "18c0bb1abd66cde9a12b5df5e5834ba1"
   },
   {
     "url": "blogs/其他/笔记/常用正则表达式.html",
-    "revision": "7b84b06c9917a2a75c2aede46b7b262e"
+    "revision": "db48b7e7c63bf0f741ae4f79e24177d1"
   },
   {
     "url": "blogs/其他/笔记/正则表达式语法.html",
-    "revision": "11899426f55efe8811434034749057d4"
+    "revision": "3c4726926320658b0135713fe3633557"
   },
   {
     "url": "blogs/其他/解决方案/docker安装vim.html",
-    "revision": "3b1a8e7cebf0a2586ad2a7864c96fb3d"
+    "revision": "0d1e37bd6acc57a3838bfec2dec8f472"
   },
   {
     "url": "blogs/其他/解决方案/mac使用homebrew无法安装nginx解决方案.html",
-    "revision": "872c8c9b3602e04ecb3f6e948433a912"
+    "revision": "3c018fc34f2c972faadebfd0f5616e5b"
   },
   {
     "url": "blogs/其他/解决方案/nextcloud不被信任.html",
-    "revision": "4cabf33f1e5e5acff06f016d2ae5a5ee"
+    "revision": "563294b7a10bded27ad3388adc418ffd"
   },
   {
     "url": "blogs/其他/解决方案/ubuntu设置虚拟显示器且远程连接.html",
-    "revision": "40d7aabdfc2c30acaa0cb41d23bb9d85"
+    "revision": "0c599e11942e03ba2d007e97a8fecd0e"
   },
   {
     "url": "blogs/前端/index.html",
-    "revision": "e8756abcbfecff287d5aae7d957405d0"
+    "revision": "799a0fc5540a43bcdee36180171552c9"
   },
   {
     "url": "blogs/前端/javascript/js计时器.html",
-    "revision": "888e6b8e427e4280dba45e038e856bf6"
+    "revision": "2dcef2d7e5ac3c55821e12f73f466474"
   },
   {
     "url": "blogs/前端/vue/vue移动端适配方案.html",
-    "revision": "e89e515a757182a20cf0ef47fdacf6e5"
+    "revision": "b95b69f3154dfbe7cd0dd87076cb3659"
   },
   {
     "url": "blogs/前端/vue/vue组件间传值的11种方式.html",
-    "revision": "1c1baf23a19932e3153fb402c5880702"
+    "revision": "e9d7d4e56e4df22b408e63caf84bd61a"
   },
   {
     "url": "blogs/前端/vue/vue路由模式为history，打包后页面空白的处理方式.html",
-    "revision": "55195268c30f12090522a601d57ba831"
+    "revision": "5f5ae6c381cd04028a7e064f4d6a3a21"
   },
   {
     "url": "blogs/前端/vue/使用vue+iview Form组件,按enter键阻止页面刷新.html",
-    "revision": "00ffa19eae5ea6353e4bcd0a8dd06402"
+    "revision": "e1031c7633b0d547effeb45986bd41e7"
   },
   {
     "url": "blogs/前端/vue/基于xterm的网页版终端.html",
-    "revision": "fbebf024487308322ee2c89097603a28"
+    "revision": "a0ac1491a9bf5a6a24f5d88be4f40be7"
   },
   {
     "url": "blogs/前端/基础/CSS动画.html",
-    "revision": "c1364ad647920648dce8fbb4dffe2094"
+    "revision": "8c3c485599ebd9a07812b614dabe6137"
   },
   {
     "url": "blogs/前端/基础/CSS定位详解.html",
-    "revision": "7fc3b7dcb677f74f7a486c1e8cd9c98c"
+    "revision": "03498e56022cbfd21148f764a4079aa1"
   },
   {
     "url": "blogs/前端/基础/flex布局.html",
-    "revision": "97a3b8bad9d4a6f415ec22c5de4d7820"
+    "revision": "8777e6f6e3e83fb2cc709b9420b537ed"
   },
   {
     "url": "blogs/前端/基础/sass用法指南.html",
-    "revision": "446c3bca46ba746e048b9eb75b9bc619"
+    "revision": "2f3a3fa6ac56a342d17fb7160908b994"
   },
   {
     "url": "blogs/前端/基础/前端开发的历史和趋势.html",
-    "revision": "ac00681db3e836751c1b6d234ef6e797"
+    "revision": "c54b477691548a3668613211b84ba062"
   },
   {
     "url": "blogs/前端/基础/前端模块化详解.html",
-    "revision": "726cb06768ab65d809d5b7a45216efd1"
+    "revision": "d9e3890cfd303a06702a5258fcbbfe8b"
   },
   {
     "url": "blogs/前端/基础/网页中使用希腊字母.html",
-    "revision": "f29430b8368a7552a7b6347ca9860641"
+    "revision": "6bc6b109009a126644b55a78ea9c76dc"
   },
   {
     "url": "blogs/前端/基础/网页色彩方案.html",
-    "revision": "98fb16b84dcecbfdc726e3d375cf8194"
+    "revision": "67bdd0fafa62573160819b2d1706c73c"
   },
   {
     "url": "blogs/前端/技巧/githubAction.html",
-    "revision": "1999f5e78a6497078c09c41221ddb439"
+    "revision": "fdb301b1c57ccc1f3e2c64a9e8f034be"
   },
   {
     "url": "blogs/前端/技巧/nginx基本配置.html",
-    "revision": "b13903a97108fdf36eb5349535599889"
+    "revision": "e5429efc261051db1e81fbd5ea7c5b39"
   },
   {
     "url": "blogs/前端/技巧/prettier常用配置项.html",
-    "revision": "dc3af5e6f452d21668371444912f3d35"
+    "revision": "bac4f1fdf9c48b24264ccd5bd0602586"
   },
   {
     "url": "blogs/前端/技巧/代码编辑框示例.html",
-    "revision": "d745382b5e20d81aaea16ebcf83db981"
+    "revision": "df3da6aedbeb2c8deea3ee90188018ed"
   },
   {
     "url": "blogs/前端/技巧/前端抓包神器whistle.html",
-    "revision": "a75705248f6693e8acb0c39a4c76315b"
+    "revision": "47f33e8bce863a6a182568c86ac92079"
   },
   {
     "url": "blogs/前端/技巧/部署Django项目并使其在后台一直运行.html",
-    "revision": "2bea96754d3107f0f60728614ea5984b"
+    "revision": "c99a767fc65f4e32e6d8a148c596e380"
   },
   {
     "url": "blogs/前端/技巧/阿里巴巴前端代码规范集成工具F2ELint使用教程.html",
-    "revision": "08b777f82bd4ab759999ceefd3545e5d"
+    "revision": "f7c2a33324fbc9f89a0748229cb3b618"
   },
   {
     "url": "blogs/后端/index.html",
-    "revision": "16361f23768adac88903faa7e5153ef2"
+    "revision": "cc3117e79f4c312f61c8fb05d9735ac4"
   },
   {
     "url": "blogs/后端/python/JsonItemExporter和JsonLinesItemExporter保存数据的异同.html",
-    "revision": "2e2b519c92aa68edd240f029df147ee9"
+    "revision": "eb3b512a3fc6960f83cb27e419eea142"
   },
   {
     "url": "blogs/后端/python/python 爬虫利器之 PyQuery 的用法.html",
-    "revision": "68253f95947e190edc67bcf21d9cd6eb"
+    "revision": "b92c083a7e4ae479e9415f58f26bf82f"
   },
   {
     "url": "blogs/后端/python/pythonic.html",
-    "revision": "4706945bcc86e4c731d52637127d3479"
+    "revision": "6f8cb8d037eb506d15e60efca21b0873"
   },
   {
     "url": "blogs/后端/python/python中list的五种查找方法.html",
-    "revision": "c151fbe98be9c4befb3b4d2c52a4442e"
+    "revision": "a173a69e25b65465751bad57b761a636"
   },
   {
     "url": "blogs/后端/python/python将list转换为csv.html",
-    "revision": "3a446a30b2d5cb08b8025fd5ab20fea9"
+    "revision": "4c1a321c0e577008c2eead42397f2a8a"
   },
   {
     "url": "blogs/后端/python/python异常处理.html",
-    "revision": "2ffbadf584425c94055613e55f3cc1fc"
+    "revision": "de8ed89160dedfab0372f1b382195b0a"
   },
   {
     "url": "blogs/后端/python/python爬虫利器之scrapy的用法.html",
-    "revision": "00778d26ea6e665da643b6f6ef82552f"
+    "revision": "5b11d38fde7c243325c5cc2f9cfcbeed"
   },
   {
     "url": "blogs/后端/其他/docker命令.html",
-    "revision": "148a0eea04efe199ef041900d7aa9742"
+    "revision": "1ec503a3e15ef08931f553402da81e94"
   },
   {
     "url": "blogs/后端/其他/Docker的基本了解和使用.html",
-    "revision": "9e807e9b98fad6d295ffcfd6d7e0ca1f"
+    "revision": "fd38e249978deaddd6d2046503340232"
   },
   {
     "url": "blogs/后端/其他/docker设置开机自启和容器自启.html",
-    "revision": "993fca1fc0b47b9cb35ccd872920a451"
+    "revision": "444ae46833fae249902f68c826a3e28d"
   },
   {
     "url": "blogs/后端/其他/dokcer容器常用命令总结.html",
-    "revision": "f11134d846651e5716fb4784079c909d"
+    "revision": "f1af09452ff12c47c4a35792e955e89d"
   },
   {
     "url": "blogs/后端/其他/TCP&UDP.html",
-    "revision": "9b8508788b0e00e1a40715b338f64276"
+    "revision": "fd9296a2f3391f0dd55f583c1b6ecd0f"
   },
   {
     "url": "blogs/后端/其他/中台.html",
-    "revision": "f64b8c86b2a3a88bb73ab926185aa986"
+    "revision": "41fc61884c70c7ad11a46d57aa7b5611"
   },
   {
     "url": "blogs/后端/数据库/mongodb教程.html",
-    "revision": "6bbd7b0315fa32591046a58f55173380"
+    "revision": "c0618473ff4b1723719f0e1ce5fa79bb"
   },
   {
     "url": "blogs/后端/数据库/mongodb配置和操作.html",
-    "revision": "74d54f6523eb188d58c17a52bcfa8ca0"
+    "revision": "7959209db15a84bd69f2776fdb0e81f8"
   },
   {
     "url": "blogs/官方文档/index.html",
-    "revision": "5eb0be46bd40b322f01347304fb37e46"
+    "revision": "d3bf34b80793dbce35cb3c5e82599114"
   },
   {
     "url": "blogs/官方文档/常用/ts.html",
-    "revision": "0a85b5672aa5939ec42b43b875203cdb"
+    "revision": "226b99865d34c9efc163ead8b5ce999d"
   },
   {
     "url": "blogs/官方文档/常用/vue.html",
-    "revision": "e2d4079de40e1e2a1ba678071ad869ee"
+    "revision": "49d62428657a5e3bac5703085e0299f2"
   },
   {
     "url": "blogs/官方文档/常用/vuepress.html",
-    "revision": "5b72b2b435c2f565e3a68f00381ffa90"
+    "revision": "9d94af6452fba5f2c7ae5bce7ad46731"
   },
   {
     "url": "bookmarks/其他/awesomeGithub.html",
-    "revision": "9db1c07b05b100ded0c5619d2c95839c"
+    "revision": "42555b9a712af0194f500ec09f4adadc"
   },
   {
     "url": "bookmarks/其他/互联网黑话.html",
-    "revision": "a7e86d5d00111908ef3c336a870297e1"
+    "revision": "7d64837b8384bc942b83aaa050aba6b4"
   },
   {
     "url": "bookmarks/其他/最适合程序员的笔记软件.html",
-    "revision": "c0467a3067948cc2a231e8f179134f6e"
+    "revision": "a6f909144f29e29f053350756c2522a0"
   },
   {
     "url": "bookmarks/其他/凉粉为什么不降价.html",
-    "revision": "3748e8e5eb30ebe921af1d96dbf579c5"
+    "revision": "944607f5d4c53748e91c29e16d3f43b9"
   },
   {
     "url": "bookmarks/其他/换系统指南.html",
-    "revision": "3298f594e12cf5f1be0d4e1a0fd3bf87"
+    "revision": "c3d66646d1a13f01bbaf2cfd6b158461"
   },
   {
     "url": "bookmarks/其他/敬酒话术.html",
-    "revision": "45b309375544b54f9f2b9ddaf59f2a6d"
+    "revision": "09f252a2c0770a5659c348026c439f8d"
   },
   {
     "url": "bookmarks/其他/潜规则.html",
-    "revision": "64debb13d7d1cfbdf2ab280c604cd09d"
+    "revision": "ae8a74bef27ae27e3fc779b26c9577df"
   },
   {
     "url": "bookmarks/常用/全国互联网公司汇总.html",
-    "revision": "a2f87d2d3e148c050b4a08b7d2905c1e"
+    "revision": "55d373689a5dadbe722bec80777f0743"
   },
   {
     "url": "bookmarks/常用/前端常用.html",
-    "revision": "5be6d8117ea75014019a10be45c458c7"
+    "revision": "77f8d5da86effaafa2f35c8040365801"
   },
   {
     "url": "bookmarks/常用/小工具.html",
-    "revision": "4e415b5f7174568cfa033779128a1ca7"
+    "revision": "d288ebeee24336c4002daf68e0ea668c"
   },
   {
     "url": "bookmarks/常用/常用网址.html",
-    "revision": "f072b9f62b88c3dcd1c28dbf9043b9f9"
+    "revision": "1e18a26b4de0494c4ef188f41e07f933"
   },
   {
     "url": "bookmarks/常用/搜索引擎使用技巧.html",
-    "revision": "e42dfee7e9d5cf8ca8a7e8ef50ff1012"
+    "revision": "edb12bd0f3a56942f5b3016901e52570"
   },
   {
     "url": "categories/AI/index.html",
-    "revision": "4d42e57ac440ce3a6b4dc74b0b996dcd"
+    "revision": "92cbba577e1e5e843b54229290f57516"
   },
   {
     "url": "categories/index.html",
-    "revision": "87d32e2d19512378278c8844fb56b55e"
+    "revision": "df9f94e8a5d6c5c314124e89440f36cf"
   },
   {
     "url": "categories/ItemExporter/index.html",
-    "revision": "53d51a607b547d66565bdcfdcba152d4"
+    "revision": "68c5251cb789fb528c50d2dde01d031e"
   },
   {
     "url": "categories/mongodb/index.html",
-    "revision": "78c3dbae9bbf9643588dc915dd41bd78"
+    "revision": "47912cf2e83d1827bccd351326489180"
   },
   {
     "url": "categories/PyQuery/index.html",
-    "revision": "5ae59c423f8c83e8276c034994beacca"
+    "revision": "5b3353ed3a83fd365fa40e25787e99b3"
   },
   {
     "url": "categories/python/index.html",
-    "revision": "3a60d039e50f5a959ebcffba4bff35c5"
+    "revision": "5906b5852707972e7988c2fc135aa50d"
   },
   {
     "url": "categories/世界杯/index.html",
-    "revision": "5016a8e8ca2e1cc9e29f8065d99f0b64"
+    "revision": "29c3dd3a86b4d33decb33ecd03cbc7f4"
   },
   {
     "url": "categories/前端/index.html",
-    "revision": "74d565510b919e4db7bd724796c31687"
+    "revision": "0ee5ad2bb6fd3e85085f8ed832b8a868"
   },
   {
     "url": "categories/前端/page/2/index.html",
-    "revision": "aba12d18e8b9f366fb4097f7ef08ee55"
+    "revision": "3e0d7cb684ddefb1806e4d41e9f9a3e8"
   },
   {
     "url": "categories/前端教程/index.html",
-    "revision": "12a05f589caffc8596cb1c16e18f3759"
+    "revision": "b9fd75bfee0d54a948615110fc6e3e00"
   },
   {
     "url": "categories/后端/index.html",
-    "revision": "3fe7c41470810eae963d3e1ee75f3b75"
+    "revision": "494c39af534ae3147a0458311f9822e0"
   },
   {
     "url": "categories/常用/index.html",
-    "revision": "cab97ce45872f86571722877ad4a3ca8"
+    "revision": "50e4a21501148e6a24d9173012be587c"
   },
   {
     "url": "categories/收藏/index.html",
-    "revision": "afd5b9d357c5884a0295e41194b81b78"
+    "revision": "cdd209132ba7519b91b005bfeea458c8"
   },
   {
     "url": "categories/教程/index.html",
-    "revision": "0b972f7c4ea734ab1dde841a8bb30d45"
+    "revision": "95373011c23fb227014ac5f01879e28b"
   },
   {
     "url": "categories/爬虫/index.html",
-    "revision": "ac23175a368376e3f06159f1b0252bd9"
+    "revision": "1817f796890ad08b44c03415b13c13f9"
   },
   {
     "url": "categories/社会/index.html",
-    "revision": "9b156e083edb502c54d78991baa3bf64"
+    "revision": "ebccee09858a468886caff17b6acefc2"
   },
   {
     "url": "categories/笔记/index.html",
-    "revision": "654ee9e198a7e3e31f96c6f8fb99ae01"
+    "revision": "814045be011c72a8434d0dfcd12c2504"
   },
   {
     "url": "categories/笔记/page/2/index.html",
-    "revision": "3fc99014664c0d46445c96eaf36bc8ee"
+    "revision": "6b75ccad8e228766ac9ef81ef3d81f52"
   },
   {
     "url": "categories/解决方案/index.html",
-    "revision": "82e89698d77536f11dcfb0162d169185"
+    "revision": "3c683b89e5332e732c3ed1e4d3d8985d"
   },
   {
     "url": "categories/话术/index.html",
-    "revision": "4452e337457def7194ba856168d92717"
+    "revision": "06ec960d9c1d90caf87d5793b5498ddd"
   },
   {
     "url": "friends/index.html",
-    "revision": "51b6af70a96597f036a276e6017eaba3"
+    "revision": "80b0e8545ece23b8d2e101420e872af5"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -987,7 +987,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "4b124c6ec5b8893d3735355791bd2045"
+    "revision": "a1fedecae959b7b91ce497fb1094b39d"
   },
   {
     "url": "js/canvas-nest.js",
@@ -999,363 +999,363 @@ self.__precacheManifest = [
   },
   {
     "url": "others/loveU.html",
-    "revision": "3b7c43e0d1b8a5566a2621dfdb9ce06d"
+    "revision": "dcf167ff91738886b397627115b659b4"
   },
   {
     "url": "others/other/work.html",
-    "revision": "3a67450c3a3921e836a0751a0a6c8d14"
+    "revision": "17a3b0a3dc0b14ef49157e98084ed601"
   },
   {
     "url": "others/projects.html",
-    "revision": "d178c5efec2f192e33d5488eb1b76262"
+    "revision": "0e989d2aac359b94aa626525a1753b97"
   },
   {
     "url": "tag/action/index.html",
-    "revision": "81d581dfd1957d70acfeeedabace9a72"
+    "revision": "37080e22b5ededf9efebdfb40a607422"
   },
   {
     "url": "tag/actions/index.html",
-    "revision": "caf06bcad7f774d2af4e4748add53525"
+    "revision": "fe87b828dbf3f944e873f9da4d12292e"
   },
   {
     "url": "tag/amd/index.html",
-    "revision": "903cf1ae8b2d0ab889a13e7899c26838"
+    "revision": "c5b66be280441b381784ba4f36727f53"
   },
   {
     "url": "tag/bat/index.html",
-    "revision": "1b870c25012cc55cd3b80600eb4bcf93"
+    "revision": "5507eff25791de5e7eb17b6013808988"
   },
   {
     "url": "tag/CICD/index.html",
-    "revision": "e067ea28d705b3eb35075b0b6805a459"
+    "revision": "25b2d265d88ef5b7c5353bd6c2883d0f"
   },
   {
     "url": "tag/commonjs/index.html",
-    "revision": "1a21e4691d67d2bc249530b4c621aed2"
+    "revision": "3920a5fe23515703565a44684da2f19c"
   },
   {
     "url": "tag/conda/index.html",
-    "revision": "8ceb6dfec294fa8ac66a447b1b3794d5"
+    "revision": "a5d2a1b8531bb305be20347f290724fe"
   },
   {
     "url": "tag/css/index.html",
-    "revision": "33a5d82c382612963535475049a8e3d7"
+    "revision": "494b9d502a91ffc4872cfeed26e034fd"
   },
   {
     "url": "tag/CSS/index.html",
-    "revision": "41815cfa3ea7bb4607f782df4d9454a9"
+    "revision": "06e693b0e4539c8f667b9e86c77c9e71"
   },
   {
     "url": "tag/ddns/index.html",
-    "revision": "908d4e3858c79ed9e7e138813d09b54d"
+    "revision": "68b622f7a7b018da722673f077dbbaab"
   },
   {
     "url": "tag/django/index.html",
-    "revision": "a1c32c93374de672ef1a2af180063534"
+    "revision": "5286355097bb9f5ac86ce85ac3cf41c8"
   },
   {
     "url": "tag/docker/index.html",
-    "revision": "de0a837eea1cf9bc774dc61ce5b22bd6"
+    "revision": "45a7b88ccff6d1ca5d820e7ddc8641bd"
   },
   {
     "url": "tag/Docker/index.html",
-    "revision": "c6659c7a1adc2167680806e4824bc2b1"
+    "revision": "018aed92dcc9fc583c6a5f2261deed41"
   },
   {
     "url": "tag/enter/index.html",
-    "revision": "7a702a9c88bca140cad1bdf28a09787b"
+    "revision": "1b88b0bf00d49416e8914659f6b7dce1"
   },
   {
     "url": "tag/es6/index.html",
-    "revision": "a982c764bebcb5f612d75d146cbeb5be"
+    "revision": "2b235aa759c979974be2eb1546e9002e"
   },
   {
     "url": "tag/f2elint/index.html",
-    "revision": "a528e834f9d0d88b9c0926989f3fd42e"
+    "revision": "1332a57284f4886c209f9f454931c571"
   },
   {
     "url": "tag/flex/index.html",
-    "revision": "469a2a2eceae29840f1a8b0eeac40947"
+    "revision": "258741270e8918bc63897cb535de260e"
   },
   {
     "url": "tag/git/index.html",
-    "revision": "b86e8b789b953563c03fa75886e1a8aa"
+    "revision": "fe78fbfb852d438fb1faceb973ed2f55"
   },
   {
     "url": "tag/github/index.html",
-    "revision": "8824da0ca1a9bcb4fd243bacf4c2dce1"
+    "revision": "041192a3a3af22a805b5197d182ee522"
   },
   {
     "url": "tag/history/index.html",
-    "revision": "445d6be49a73046c2cde27978a615e70"
+    "revision": "5ec4bdb49f4431cd82791ff1c29f0a3f"
   },
   {
     "url": "tag/homebrew/index.html",
-    "revision": "b520380c2fd6c2ee3612d8b7f091ab7f"
+    "revision": "deb1915ca5c8db0baae08d0f0704de9d"
   },
   {
     "url": "tag/HTTP/index.html",
-    "revision": "fc80ab990929479f12c4e684e4bdfc10"
+    "revision": "598d72a4a63f30f5a5d2c8646f19bd25"
   },
   {
     "url": "tag/index.html",
-    "revision": "548c175c4dd6baa16f2ed92fb8d11eb9"
+    "revision": "63cda5404c7a2ddfae7a8547e7ff1042"
   },
   {
     "url": "tag/iview/index.html",
-    "revision": "f02d4a54ea18e77aad60c73c147a8d75"
+    "revision": "b3d74a0925b09e9a814fb7c91084c974"
   },
   {
     "url": "tag/js/index.html",
-    "revision": "80166f9c57d71a6d54a6902c0366bb80"
+    "revision": "36126d3dafa1b1b6afff05908db6b1eb"
   },
   {
     "url": "tag/k8s/index.html",
-    "revision": "51c5acfdd0036723e2d38d6da068dc7b"
+    "revision": "26e7f9642d7216076c8ca0aa1efffa45"
   },
   {
     "url": "tag/keras/index.html",
-    "revision": "79e8c8b1fc79dc741068575e415ca194"
+    "revision": "0ebe1fc63ae6c890be05f91af8ff6cff"
   },
   {
     "url": "tag/linux/index.html",
-    "revision": "64c34b5b0286fa8331c7b5372a9906fc"
+    "revision": "26d42cd7b8d4d258ebd025fc6e07023b"
   },
   {
     "url": "tag/lstm/index.html",
-    "revision": "fca514c25c0e8fdec077569f408ab12a"
+    "revision": "3de90fc867f6f742749535d3290d9be3"
   },
   {
     "url": "tag/mac/index.html",
-    "revision": "2f89e01a18138c2b50a737c707d952ad"
+    "revision": "0c1b62996e9774bc99143f27f3f85b51"
   },
   {
     "url": "tag/markdown/index.html",
-    "revision": "330a37297d3a2ee113d0651f6c8cffa5"
+    "revision": "7cb5b3dd272a2ac8c3b9e0bfbf83009b"
   },
   {
     "url": "tag/nextcloud/index.html",
-    "revision": "b609d0d117bab77b80bbb3109391b27c"
+    "revision": "b28afad37d3cad666dbde835eb60a5e9"
   },
   {
     "url": "tag/nginx/index.html",
-    "revision": "f131952fd774a5191f8aeb23816ab160"
+    "revision": "5fe71a70abe26dbc8ebded1a78546882"
   },
   {
     "url": "tag/npm/index.html",
-    "revision": "ef6b45759e938d5f128d28e52190dc45"
+    "revision": "c5f2085d867ed77a1995aeea55ddeb1a"
   },
   {
     "url": "tag/pod/index.html",
-    "revision": "44952305381d28a93d307524865e5ead"
+    "revision": "dacddf9afd5e620b069739cc99da3072"
   },
   {
     "url": "tag/prettier/index.html",
-    "revision": "b8ef66cfd61e967faf5fe2ac3dd45e5a"
+    "revision": "d96eeea38e1426268c5452c5929087a1"
   },
   {
     "url": "tag/python/index.html",
-    "revision": "4b622232ffef84014dcc2e7dd754a53e"
+    "revision": "ba16995b373e39d31a4fabbbadcc937d"
   },
   {
     "url": "tag/sass/index.html",
-    "revision": "590936dd446293ce5174ecc98f47021a"
+    "revision": "d2c0d8731f1cd85882e560a7e1e7ba63"
   },
   {
     "url": "tag/scala/index.html",
-    "revision": "7be92c5856bd3d888692d43758404c05"
+    "revision": "bc6207d2c2c7766c3f3083f7d99c836b"
   },
   {
     "url": "tag/scrapy/index.html",
-    "revision": "01c151991513ab012e5997db96eeb467"
+    "revision": "f72dabc32254242631ceaa0a9d35f7f4"
   },
   {
     "url": "tag/Sequential/index.html",
-    "revision": "46cb4d9c88e826cdda221f5957cf5d13"
+    "revision": "eacd785224ff190a0f12e6e00dcec800"
   },
   {
     "url": "tag/TCP/index.html",
-    "revision": "1e9da96201e3fb335a3b339d266a0fdb"
+    "revision": "ca5d3c8f8590da7dfc95604bd7c0e662"
   },
   {
     "url": "tag/ubuntu/index.html",
-    "revision": "66998dfa9ebb702110273836c8949576"
+    "revision": "f9232079d6018dae80ca610967612ecd"
   },
   {
     "url": "tag/UDP/index.html",
-    "revision": "fd13c1a8c091b38bcb7cef9bde0df2b2"
+    "revision": "eb856b0b9a1c5d68f16e45fd51a242ff"
   },
   {
     "url": "tag/vim/index.html",
-    "revision": "997b70ac8a12e243363cd88357e83116"
+    "revision": "6d18b866b674ec7d272b0afa5b91f48f"
   },
   {
     "url": "tag/vnc/index.html",
-    "revision": "3812bc6426c28a9da2306b267ba5d44e"
+    "revision": "3ef1f217c119864cd08f5b6a3c9045be"
   },
   {
     "url": "tag/vue/index.html",
-    "revision": "71ea17d68cfb26a3a2ac7f2ce0c5af09"
+    "revision": "eb147290224887b73504929e4e1dad88"
   },
   {
     "url": "tag/vue3/index.html",
-    "revision": "cd94953a1313da0c2cd452a3461d5277"
+    "revision": "838965e2767b2afe1ec3ea7f5a151244"
   },
   {
     "url": "tag/websocket/index.html",
-    "revision": "b5daddba86124f1203a9337276c1da7c"
+    "revision": "e29bc43b14d21d0ebcb539731f5eb155"
   },
   {
     "url": "tag/whistle/index.html",
-    "revision": "64d084f10dca5d2e7e556d0f785208ec"
+    "revision": "661e9557deef2a422e36a32f9bb26487"
   },
   {
     "url": "tag/xterm/index.html",
-    "revision": "0385590c03f40f1cf21440592a30434e"
+    "revision": "281f3f08670e732fa138a1dda9ea7821"
   },
   {
     "url": "tag/yaml/index.html",
-    "revision": "37209727fd1f8738a4f272d20cbfdd12"
+    "revision": "33482db8e0197e418b93edcfbcbe3ab9"
   },
   {
     "url": "tag/yarn/index.html",
-    "revision": "de2ab00f42693c37c44de746bd43da56"
+    "revision": "519b50d365a174e5873acc9b70cd716f"
   },
   {
     "url": "tag/世界杯/index.html",
-    "revision": "b0244ae16dc905bb715e67dcda87a4af"
+    "revision": "b872ecd1789c2dd3b00238d5632620e5"
   },
   {
     "url": "tag/中台/index.html",
-    "revision": "225d80a3adb34cfec89f78e8fe720094"
+    "revision": "5f3d8210e590610881856aef4068e7f6"
   },
   {
     "url": "tag/互联网黑话/index.html",
-    "revision": "ed80c5623c1401fb4028d3fd2d27f2ce"
+    "revision": "ee41e0a7c914be742b541aa4ebc2f8cc"
   },
   {
     "url": "tag/内网穿透/index.html",
-    "revision": "6de829ee1b4e87bee941fe8954727290"
+    "revision": "71dc4feee27c74067950bb51c6bb3ba3"
   },
   {
     "url": "tag/动画/index.html",
-    "revision": "6f7247d109b01f228cb79e7716ba5ebb"
+    "revision": "c51a16d6c5509aaf6ec85d3c5b106ad2"
   },
   {
     "url": "tag/历史/index.html",
-    "revision": "55b8f199ab7f91388a559cd64356c81b"
+    "revision": "a1d6fd9839a196b71bcac16bc16828e2"
   },
   {
     "url": "tag/复杂度/index.html",
-    "revision": "8ebf6a7f7e9ac5a26f9bf300c55467d9"
+    "revision": "0b6cb6d4696ec85bc90dcfe6fe585dd7"
   },
   {
     "url": "tag/定位/index.html",
-    "revision": "5d7b43d18ff17c68625a5ca495b26781"
+    "revision": "80efabca682f869200b194c49fc2564b"
   },
   {
     "url": "tag/工具/index.html",
-    "revision": "5e54a5778359ba1ab79b436c2622b683"
+    "revision": "6fe0be7345650ef3e20145843de4460c"
   },
   {
     "url": "tag/布局/index.html",
-    "revision": "7f739f884a5d82c66aecc8d42ee8bb4f"
+    "revision": "99a488e24ec5ef5a2ac0d87bfb758312"
   },
   {
     "url": "tag/希娜字母/index.html",
-    "revision": "8a0801f38be9cbc3e27303920a16c7a3"
+    "revision": "f20c0bdd43441b207bd1ff340b10a135"
   },
   {
     "url": "tag/常用命令/index.html",
-    "revision": "301e9830ce31bad5861cb2a73be5d308"
+    "revision": "b4d62d5b0ed6173433f1f160445b801f"
   },
   {
     "url": "tag/开机自启/index.html",
-    "revision": "2d32bc16251f92d08cbcd8273826e34b"
+    "revision": "6926360577f62f893c8d79e7634c9bbd"
   },
   {
     "url": "tag/技巧/index.html",
-    "revision": "d388dfe6f3c44501e848012125c0a05f"
+    "revision": "29113b9bf90ccbaacfcde816c888b8ca"
   },
   {
     "url": "tag/抓包/index.html",
-    "revision": "498211ae086197ccf7a0083efbbe33bb"
+    "revision": "0e9f96a5004f86b9fc6b976eb5224bc3"
   },
   {
     "url": "tag/换系统/index.html",
-    "revision": "93cb588d6f25352109667480b843a359"
+    "revision": "730971e3128d7242a763cf117aa03de6"
   },
   {
     "url": "tag/敬酒/index.html",
-    "revision": "6ebda7a54a84d44c713625faeff76bd3"
+    "revision": "70db57ecbf99d523742a2a5b627d0d89"
   },
   {
     "url": "tag/机器学习/index.html",
-    "revision": "6e92df2917afeeeacd6a2a0cb1f7efa5"
+    "revision": "b2cb8abccdc5ab3bd7392fc824d0699a"
   },
   {
     "url": "tag/格式化/index.html",
-    "revision": "17c380f8f3fdea0d9366c61ca9f70a1d"
+    "revision": "12c9a6511ddc4c135b9263fafed10307"
   },
   {
     "url": "tag/模块化/index.html",
-    "revision": "1ad3a8912933fb16883f9ab1d4185b53"
+    "revision": "c190928db3c91cb44472e4bf9fe81c25"
   },
   {
     "url": "tag/正则表达式/index.html",
-    "revision": "649939f6a53b5338013feb88019f57ea"
+    "revision": "a48f2dea68cad2b9e95a811c35a9b176"
   },
   {
     "url": "tag/爬虫/index.html",
-    "revision": "25006afd05621bbf68646ccacce007ca"
+    "revision": "90782e3a648d7309c3a42dab227b20ad"
   },
   {
     "url": "tag/移动适配/index.html",
-    "revision": "081b110a908a454c2c4312e0fa134c93"
+    "revision": "e7d564027673e773f9c6a1f47d412b5e"
   },
   {
     "url": "tag/笔记软件/index.html",
-    "revision": "1b1578e282b7b6d1314e01b792342f8e"
+    "revision": "bbf912bb02672fc230ac5eaf97d846b2"
   },
   {
     "url": "tag/系统/index.html",
-    "revision": "7462ad6e8880b0c25a48a4178e097ae6"
+    "revision": "74aae0852d303e1c58eeff199867690b"
   },
   {
     "url": "tag/组件传值/index.html",
-    "revision": "f4e5755ffd62c26b8aa87ca8eedca57a"
+    "revision": "a0f9b378618a0b4ebc681e6a817285bf"
   },
   {
     "url": "tag/终端/index.html",
-    "revision": "a97c4f7d03122786b7d649fa6ff4b3c7"
+    "revision": "2a0aae0ca6b8058378fda710bfb24b6f"
   },
   {
     "url": "tag/网址/index.html",
-    "revision": "bd969153660de01505fffd99e5f53a5d"
+    "revision": "7566f13772d7d5cecd32458a09902ea8"
   },
   {
     "url": "tag/虚拟显示器/index.html",
-    "revision": "1a708072b2a0eb7b438bf17c059bf755"
+    "revision": "83d6a5c67dc196535a956e04899ac2aa"
   },
   {
     "url": "tag/计算机网络/index.html",
-    "revision": "af58a34a74b0bad7659cffb7ac7ef013"
+    "revision": "a0aa676f034fcf64683fd77085d5570a"
   },
   {
     "url": "tag/配色/index.html",
-    "revision": "1b5f14677a15299c7869c68d8e178d57"
+    "revision": "dd729759f10ff768d9e322b070597f6c"
   },
   {
     "url": "tag/面试汇总/index.html",
-    "revision": "6bb650331999877db55fcadb42d4eed3"
+    "revision": "fcdd18dafec96f83170e3f15544e4f42"
   },
   {
     "url": "tag/页面刷新/index.html",
-    "revision": "730cf16ba411105f0b9ede85ab081109"
+    "revision": "2beecd1e5aef0b7c1543921e5c7a185e"
   },
   {
     "url": "timeline/index.html",
-    "revision": "c7c062d98a067bd6d54959ceeb155162"
+    "revision": "4660394345dd3f797ccbea0656ca4184"
   },
   {
     "url": "view/heart.gif",
