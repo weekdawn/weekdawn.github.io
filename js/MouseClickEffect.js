@@ -5,7 +5,7 @@ function getRandom(max, min) {
 }
 jQuery(document).ready(function ($) {
     $("body").click(function (e) {
-        var a = new Array("菠", "萝", "球", "❤️", "naiki", "❤️");
+        var a = new Array("不", "为", "无", "益", "之", "事", "何", "以", "遣", "有", "生", "之", "涯");
         var $i = $("<span/>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;
         var x = e.pageX,
