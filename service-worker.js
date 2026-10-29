@@ -27,15 +27,15 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "a10619d45545db81a9ee1e2ee2205423"
+    "revision": "8820895ece7a0166ec79199a5a9de4db"
   },
   {
     "url": "about/index.html",
-    "revision": "2df0cc917dd3005b8d392d13424cbbf3"
+    "revision": "282780c9c6c14a1b40b7b76ce43d483e"
   },
   {
-    "url": "assets/css/0.styles.be7ba0c3.css",
-    "revision": "b626c55c07e01eb53c144d0080dd7987"
+    "url": "assets/css/0.styles.b965c77f.css",
+    "revision": "b08462de093317fdc417baa817a6ec95"
   },
   {
     "url": "assets/fonts/iconfont.938fa69e.woff",
@@ -70,16 +70,16 @@ self.__precacheManifest = [
     "revision": "60a5f661bd1a96ace867cdbe35ecd019"
   },
   {
-    "url": "assets/js/11.4ede0c5d.js",
-    "revision": "c1bcb664336c590cfb4e4332579e8563"
+    "url": "assets/js/11.73eaedc9.js",
+    "revision": "ca71ee669398aa8f7f8090625eb4762a"
   },
   {
     "url": "assets/js/12.469a391a.js",
     "revision": "1757d620ceb00bf5d73260423b929e76"
   },
   {
-    "url": "assets/js/13.4e86b06e.js",
-    "revision": "8bfa718c361353c70436c95a3cb45744"
+    "url": "assets/js/13.1bf971e3.js",
+    "revision": "9077aeb417c897542710d67c3bb4fdd6"
   },
   {
     "url": "assets/js/14.229d6d47.js",
@@ -90,20 +90,20 @@ self.__precacheManifest = [
     "revision": "edda1c2a3af56956545ff4ee1a7259c4"
   },
   {
-    "url": "assets/js/16.23c0b8ba.js",
-    "revision": "7756328b8d5a37e1ff06208922ca3236"
+    "url": "assets/js/16.61ab37e5.js",
+    "revision": "2593096818e8cb21f16cbcea1f0cf072"
   },
   {
     "url": "assets/js/17.b1060eed.js",
     "revision": "3b2451117621a65005b5c9649f1d246d"
   },
   {
-    "url": "assets/js/18.e78b0603.js",
-    "revision": "cea2e60b5d67075425a57de75dc8a758"
+    "url": "assets/js/18.71fc3f65.js",
+    "revision": "7577bddffe78fced882ea12f31514a5e"
   },
   {
-    "url": "assets/js/19.22693aa9.js",
-    "revision": "ce4cad5decd6fe619f8af1ab1be5fec0"
+    "url": "assets/js/19.c80876a9.js",
+    "revision": "c6bd584c0ce61d49ce21b97bebab4332"
   },
   {
     "url": "assets/js/2.7f7f97d7.js",
@@ -166,8 +166,8 @@ self.__precacheManifest = [
     "revision": "0ae0edcdc226e80799b2c3ba7d4dd85d"
   },
   {
-    "url": "assets/js/4.0f679bd4.js",
-    "revision": "f68ee53301352d06a93285dfcb8dafb0"
+    "url": "assets/js/4.9e148f36.js",
+    "revision": "5be3e59b3fa87111fff40805c2e903d4"
   },
   {
     "url": "assets/js/5.bb85c144.js",
@@ -190,56 +190,56 @@ self.__precacheManifest = [
     "revision": "1f6a6364cd2f70cc6ca557c85c7ce0c3"
   },
   {
-    "url": "assets/js/app.595221d8.js",
-    "revision": "1164b89dbb04f26b89371f5c9290060d"
+    "url": "assets/js/app.b17d7a89.js",
+    "revision": "b87bbd01f624490db683e0afddcad4a4"
   },
   {
     "url": "bookmarks/常用/AI.html",
-    "revision": "7a485c1c3711cee1f0569b42e50e6632"
+    "revision": "fad09f69b095f8058613f0b54c9f0548"
   },
   {
     "url": "bookmarks/常用/claude code配置.html",
-    "revision": "76426d298c5a066ff318a798ec148384"
+    "revision": "080e43395ed63bfa32623efa5ac5c07a"
   },
   {
     "url": "bookmarks/常用/MacOs.html",
-    "revision": "50c1aba92f87d7b39f499d849b39b7f1"
+    "revision": "fff78661dc0b9f6c4c13b2677290ae6f"
   },
   {
     "url": "bookmarks/常用/小鹤双拼.html",
-    "revision": "566fbacb75d4cb50060515dc0373de83"
+    "revision": "f6626765e168018165a9562d7f07f329"
   },
   {
     "url": "bookmarks/常用/工具集.html",
-    "revision": "4c7bca045d8e7ac8f4531727761b9d55"
+    "revision": "e0015ecc71834df5640d33ffb580184f"
   },
   {
     "url": "bookmarks/常用/常用网址.html",
-    "revision": "398c019c4de716277a91e455a2208638"
+    "revision": "fa8d0dd0bfd55f04df7f27a6c531443f"
   },
   {
     "url": "bookmarks/常用/开发资源库.html",
-    "revision": "1bb685c1ac33a8c065458aa505e64578"
+    "revision": "23e619a9251ffbee20e2b5377fb8b063"
   },
   {
     "url": "bookmarks/常用/护眼模式.html",
-    "revision": "fd9ee85bd051498f1c7f140254410da3"
+    "revision": "5e283b6ead07d04dfb006c8258fce205"
   },
   {
     "url": "categories/chatgpt/index.html",
-    "revision": "de8626e0ae2288c34c557d2b2e98c1ef"
+    "revision": "532da857b1cc31d500063667a90ef491"
   },
   {
     "url": "categories/index.html",
-    "revision": "54febccc8467acac6c69edb57c4f1270"
+    "revision": "7bf12484b2f64448d40fb6d901c24779"
   },
   {
     "url": "categories/微信/index.html",
-    "revision": "3ff80a3611eb901a7a711a9eac4e896b"
+    "revision": "c87f7a3064f3c2827e34cce8e027d3fe"
   },
   {
     "url": "categories/收藏/index.html",
-    "revision": "f8568ef20479a9ee83d319ffddaac7eb"
+    "revision": "cc4f83ff79f65d81be0d5442816f187b"
   },
   {
     "url": "files/loveEyes.js",
@@ -247,7 +247,7 @@ self.__precacheManifest = [
   },
   {
     "url": "hide/transferRecord.html",
-    "revision": "0e815156ca7b19667d1804ff3c2c85af"
+    "revision": "613675446d49475eb413c57bb2e018a1"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -279,7 +279,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "e4438a74d654f7551f0f89e9be1153de"
+    "revision": "3d079c6b1b276cec2b8c511edebb2336"
   },
   {
     "url": "js/canvas-nest.js",
@@ -291,47 +291,47 @@ self.__precacheManifest = [
   },
   {
     "url": "other/chatgpt中文调教指南.html",
-    "revision": "abe324aa60078045f3de74a05895d80b"
+    "revision": "11f60f0ba9aa46fc4e24d53f11a2fb93"
   },
   {
     "url": "other/index.html",
-    "revision": "2bc2b966e8855cedd52c909d508f149e"
+    "revision": "a1650e5e7d1d2bc09e05c8ff1bea9365"
   },
   {
     "url": "other/算法学习笔记.html",
-    "revision": "3887d577e2d237c7d6fbe75c5fbaa8a5"
+    "revision": "9d89273517a2624c84af61966063b487"
   },
   {
     "url": "other/面试问题总结.html",
-    "revision": "7dc87816b1f4759bf2a5f25e402dd087"
+    "revision": "e71eb19c1b547cb497a7c9e5662db2c1"
   },
   {
     "url": "other/面试问题解答.html",
-    "revision": "777a8d9fcd6d2d0c51d58368f0804038"
+    "revision": "02dd64dbd8ad4c3e76287c7a7f701417"
   },
   {
     "url": "tag/chatgpt/index.html",
-    "revision": "d054dc31bbcdaed05356fb30c369eacf"
+    "revision": "a285d30374e7cb7085c6da8490c1cbe7"
   },
   {
     "url": "tag/index.html",
-    "revision": "4a5eeef1d0054a35168c05650b79a6ad"
+    "revision": "8b491c588e9d31e242db1c9d19d7021b"
   },
   {
     "url": "tag/工具/index.html",
-    "revision": "636d3c472bdfbae2b58f794f86bb3643"
+    "revision": "30001d36c2a6ebbf862a0835791db191"
   },
   {
     "url": "tag/微信/index.html",
-    "revision": "f5133f652059f28b1a95d52ded2acde4"
+    "revision": "8521d3f171ef1083b36bbbcdafdc2a85"
   },
   {
     "url": "tag/网址/index.html",
-    "revision": "d3ec079d9881c01fa8db487878d0b204"
+    "revision": "c84e5117d10baf527fea520cc3cf97a3"
   },
   {
     "url": "timeline/index.html",
-    "revision": "4a317cf8dd244ec37eec04a305817967"
+    "revision": "fc93614071ad231a4bcadbfc1a9e474f"
   },
   {
     "url": "view/heart.gif",
